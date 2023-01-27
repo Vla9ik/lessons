@@ -1,0 +1,88 @@
+/* ----------------- */
+/* --RESET STYLES--- */
+/* ----------------- */
+@import url("reset.css");
+
+div > h2 {
+    color: rgb(29, 133, 224);
+}
+
+.parts_of_pc ul li a {
+    color: blueviolet;
+}
+
+.introduction h1 {
+    color: rgb(255, 157, 0);
+}
+
+.text p {
+    color: rgb(255, 80, 205);
+}
+
+.motherboard .title {
+    color: rgb(209, 43, 43);
+}
+
+.motherboard .motherboard_text {
+    color: chartreuse;
+}
+
+.motherboard .motherboard_text a {
+    color: blue;
+}
+
+.processor * {
+    color: aqua;
+}
+
+.processor span a {
+    color: blueviolet;
+}
+
+.title.title_memory {
+    color: rgb(23, 13, 87);
+}
+
+#memory span a {
+    color: aqua;
+}
+
+.ram .about_ram  a {
+    color: aqua;
+}
+
+.ram .about_ram {
+    color: bisque;
+}
+
+.videocard h2 ~  p {
+    color: blueviolet;
+}
+
+.videocard a {
+    color: brown;
+}
+
+.power h2 + p {
+    color: cadetblue;
+}
+
+.power h2 {
+    color: chartreuse;
+}
+
+.power a {
+    color: aqua;
+}
+
+.another h2 {
+    color: brown;
+}
+
+.another ul li p {
+    color: aquamarine;
+}
+
+.another h3 {
+    color:blue;
+}
