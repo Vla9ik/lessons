@@ -1,0 +1,157 @@
+/* ----------------- */
+/* --RESET STYLES--- */
+/* ----------------- */
+@import url("reset.css");
+
+
+/* ====================== ШРИФТИ =============================== */
+
+/* &display=swap */
+
+@import url(https://fonts.googleapis.com/css?family=Sofia+Sans:300,700&display=swap);
+
+@font-face {
+    font-family: 'Comforter';
+    src: local('Comforter Regular'), local('Comforter-Regular'),
+        url('../fonts/Comforter-Regular.woff2') format('woff2'),
+        url('../fonts/Comforter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+.freelance .freelance__title {
+    font-family: 'Comforter';
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    color: rgba(76, 38, 248, 0.738);
+    text-transform: lowercase;
+}
+
+
+.freelance .text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: brown;
+    font-style: italic;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.origin .title  {
+    font-family: 'Comforter';
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    color: rgba(76, 38, 248, 0.738);
+    text-transform: capitalize;
+}
+
+.origin .text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    color: rgb(167, 251, 22);
+    text-align: justify;
+    text-indent: 20px;
+    text-align: justify;
+    text-decoration: underline;
+    text-shadow: 2px 3px 5px rgba(145, 19, 19, 0.83), -2px -4px 7px blue;
+}
+
+.who .title {
+    font-family: 'Comforter';
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    color: rgba(76, 38, 248, 0.738);
+    text-shadow: 2px 3px 5px rgba(26, 207, 104, 0.83), -2px -4px 7px rgb(222, 184, 32);
+    text-transform: uppercase;
+}
+
+.who .text {
+    font-size: 23px;
+    line-height: 1.2;
+    color: rgba(5, 34, 34, 0.503);
+    text-shadow: 2px 3px 5px rgba(187, 12, 172, 0.83);
+    text-indent: 20px;
+    text-align-last: left;
+    line-height: 1.5;
+}
+
+.plus .title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 10px 10px 5px rgba(26, 207, 104, 0.83);
+    text-decoration: underline;
+}
+
+.plus .text {
+    text-indent: 20px;
+    color: blueviolet;
+    text-align: right;
+    word-spacing: 30px;
+    line-height: 1.5;
+}
+
+
+.minus .title  {
+    font-family: 'Comforter';
+    font-weight: 400;
+    text-align: center;
+    font-size: 50px;
+    color: yellowgreen;
+    text-shadow: 2px 3px 5px green;
+    letter-spacing: 5px;
+    text-indent: 20px;
+}
+
+.minus .description, .text {
+    font-size: 20px;
+    line-height: 1.5;
+    color: aquamarine;
+    text-shadow: 5px 5px 5px red;
+}
+
+.exchanges { 
+    white-space: normal;
+}
+
+.exchanges h2 {
+    font-family: 'Comforter';
+    font-weight: 400;
+    text-align: center;
+    font-size: 50px;
+    color: cadetblue;
+    text-shadow: 3px 3px 9px red;
+}
+
+.exchanges h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: rgb(67, 28, 210);
+    text-shadow: 3px 4px 7px red;
+    font-size: 22px;
+
+}
+.exchanges .exchange {
+    color: cornflowerblue;
+    text-shadow: 3px 8px 6px green;
+    text-indent: 20px;
+    line-height: 1.5;
+}
+
+.exchanges .description span {
+    text-decoration: line-through;
+}
