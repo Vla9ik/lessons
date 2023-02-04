@@ -93,6 +93,7 @@ body {
 
 
 .main-text-block {
+    margin: 0 auto;
     background-color: rgba(128, 0, 128, 0.39);
     max-width: 500px;
     max-height: 500px;
@@ -109,11 +110,11 @@ body {
 
 .cards {
     font-size: 0;
-    padding: 20px 40px;
+    padding: 20px 40px 30px;
     display: inline-block;
-    vertical-align: top;
     background-color: #16bfea86;
     width: 100%;
+    
 }
 
 .card5 {
@@ -124,6 +125,8 @@ body {
     height: 250px;
     padding: 10px;
     font-size: 15px;
+    vertical-align: top;
+    margin-right: 10px;
 }
 .card4 {
     display: inline-block;
@@ -133,7 +136,9 @@ body {
     height: 250px;
     padding: 10px 20px;
     font-size: 15px;
-
+    vertical-align: top;
+    overflow: hidden;
+    margin-right: 10px;
 }
 .card3 {
     display: inline-block;
@@ -143,7 +148,8 @@ body {
     height: 250px;
     padding: 10px 20px 10px;
     font-size: 15px;
-
+    vertical-align: top;
+    overflow: scroll;
 }
 .card2 {
     display: inline-block;
@@ -153,7 +159,8 @@ body {
     height: 250px;
     padding: 30px 30px 30px 30px;
     font-size: 15px;
-
+    vertical-align: top;
+    margin-left: 20px;
 }
 .card1 {
     display: none;
@@ -161,5 +168,5 @@ body {
     width: 250px;
     height: 250px;
     font-size: 15px;
-
+    vertical-align: top;
 }
