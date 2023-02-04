@@ -114,7 +114,7 @@ body {
     display: inline-block;
     background-color: #16bfea86;
     width: 100%;
-    
+    margin-bottom: 20px;
 }
 
 .card5 {
@@ -169,4 +169,22 @@ body {
     height: 250px;
     font-size: 15px;
     vertical-align: top;
+}
+
+
+.links {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0;
+    margin-bottom: 20px;
+}
+.link {
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.link .facebook {
+    margin-right: 0;
 }
