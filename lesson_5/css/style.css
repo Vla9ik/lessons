@@ -69,6 +69,10 @@ body {
     margin-bottom: 80px;
 }
 
+.img {
+    font-size: 0;
+}
+
 .img img {
     max-width: 100%;
 }
@@ -88,3 +92,74 @@ body {
 
 
 
+.main-text-block {
+    background-color: rgba(128, 0, 128, 0.39);
+    max-width: 500px;
+    max-height: 500px;
+    overflow: auto;
+    margin-bottom: 30px;
+    padding: 30px 15px;
+}
+
+.main-text-block p {
+    color: #fff;
+    text-indent: 20px;
+    text-shadow: 5px 4px 7px yellow;
+}
+
+.cards {
+    font-size: 0;
+    padding: 20px 40px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #16bfea86;
+    width: 100%;
+}
+
+.card5 {
+    display: inline-block;
+    color: #fff;
+    background-color: #ab353591;
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    font-size: 15px;
+}
+.card4 {
+    display: inline-block;
+    color: #c1a3a3;
+    background-color: #1657ad91;
+    width: 250px;
+    height: 250px;
+    padding: 10px 20px;
+    font-size: 15px;
+
+}
+.card3 {
+    display: inline-block;
+    color: #729173;
+    background-color: #ab883591;
+    width: 250px;
+    height: 250px;
+    padding: 10px 20px 10px;
+    font-size: 15px;
+
+}
+.card2 {
+    display: inline-block;
+    color: #4a6c9e;
+    background-color: #3dab3591;
+    width: 250px;
+    height: 250px;
+    padding: 30px 30px 30px 30px;
+    font-size: 15px;
+
+}
+.card1 {
+    display: none;
+    background-color: #37843191;
+    width: 250px;
+    height: 250px;
+    font-size: 15px;
+
+}
