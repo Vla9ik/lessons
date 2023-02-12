@@ -1,0 +1,219 @@
+/* ----------------- */
+/* --RESET STYLES--- */
+/* ----------------- */
+@import url("reset.css");
+
+
+/* ====================== ШРИФТИ =============================== */
+
+/* Встановлює насиченість (товщину) шрифту
+font-weight: цифрове значення або значення словом (словесне);
+успадковується
+
+100 - thin 
+300 - light 
+400 - Regular (normal) (за замовчуванням)
+500 - medium 
+600 - semibold 
+700 - bold 
+900 - black */
+
+/*  body {
+	/* font-family: "Poppins", sans-serif;  Times New Roman  за замовченням */
+	/* font-size: 14px;  16 за замовченням */
+	/* font-weight: 300;  400 (Regular) за замовченням */
+	/* color: #6c757d;  #000000 (чорний) за замовченням 
+} */
+
+
+/* &display=swap */
+
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,700&display=swap);
+
+
+body {
+    font-family: "Poppins" ,serif; 
+    font-size: 14px;
+    font-weight: 300;
+    color: #6C757D;
+}
+
+[class*="__container"] {
+	max-width: 1270px; 
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.article {
+    padding-top: 80px;
+    margin-bottom: 50px;
+}
+
+.article__text-block {
+    margin: 0 auto 80px;
+    max-width: 816px;
+}
+.article__title {
+    max-width: 605px;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.60; /* 40/25 */
+    margin-bottom: 40px;
+}
+.article__descr p {
+    margin-bottom: 30px;
+    line-height: 1.78; /* 25/14 */
+}
+.image {
+    max-width: 100%;
+    margin-bottom: 80px;
+}
+.article__images {
+    font-size: 0;
+    margin-bottom: 80px;
+}
+.article__image {
+    max-width: 100%;
+}
+
+.article__image_01 {
+    margin-right: 30px;
+}
+
+.img__big {
+    display: block;
+    margin: 0 auto 100px;
+    width: 100%;
+}
+
+.wardrobe {
+    padding-top: 50px;
+}
+
+.article__text-block_mod {
+    margin-bottom: 100px;
+}
+
+.article__images_mod {
+    margin-bottom: 100px;
+}
+
+
+
+/* ======================================================== */
+/* ---------------------- Практика ------------------------ */
+/* ======================================================== */
+
+
+.button-block {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.link {
+    font-size: 28px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(118, 33, 154);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+
+.practice {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cards {
+    display: inline-block;
+    font-size: 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.card-1 {
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    background-color: yellowgreen;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.2;
+    vertical-align: top;
+    margin: 0 30px 20px 0;
+    border-left: 6px dotted red;
+    border-right: 6px dotted red;
+    border-top: 4px dashed rgb(22, 37, 144);
+    border-bottom: 4px dashed rgb(35, 159, 29);
+}
+.title {
+}
+.card-2 {
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    background-color: yellowgreen;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.2;
+    vertical-align: top;
+    border: 10px solid blue;
+}
+.card-3 {
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    background-color: yellowgreen;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.2;
+    vertical-align: top;
+    margin: 0 30px 20px 0;
+    outline: 5px dotted purple;
+}
+.card-4 {
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    background-color: yellowgreen;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.2;
+    vertical-align: top;
+    border-radius: 10px;
+    outline: 6px dashed pink;
+    opacity: 0.5;
+    box-shadow: inset 10px 5px 20px 1px rgb(53, 67, 219);
+}
+.card-5 {
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    background-color: yellowgreen;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.2;
+    vertical-align: top;
+    margin: 0 30px 20px 0;
+    border-radius: 30px;
+    border: 10px dashed orange;
+    box-shadow: 0px 0px 20px 0px rgb(193, 215, 29), 10px 20px 30px 1px pink;
+}
+.card-6 {
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    background-color: yellowgreen;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.2;
+    vertical-align: top;
+    border-radius: 50px;
+    box-shadow: 10px 5px 20px 1px red;
+}
+
