@@ -152,6 +152,9 @@ body {
     border-bottom: 4px dashed rgb(35, 159, 29);
 }
 .title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
 }
 .card-2 {
     display: inline-block;
