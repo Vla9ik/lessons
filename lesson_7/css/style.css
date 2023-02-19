@@ -1,0 +1,226 @@
+/* ----------------- */
+/* --RESET STYLES--- */
+/* ----------------- */
+@import url("reset.css");
+
+
+/* ====================== ШРИФТИ =============================== */
+
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap);
+
+/* Встановлює насиченість (товщину) шрифту
+font-weight: цифрове значення або значення словом (словесне);
+успадковується
+
+100 - thin 
+300 - light 
+400 - Regular (normal) (за замовчуванням)
+500 - medium 
+600 - semibold 
+700 - bold 
+900 - black */
+
+/*  body {
+	/* font-family: "Poppins", sans-serif;  Times New Roman  за замовченням */
+	/* font-size: 14px;  16 за замовченням */
+	/* font-weight: 300;  400 (Regular) за замовченням */
+	/* color: #6c757d;  #000000 (чорний) за замовченням 
+} */
+
+
+/* &display=swap */
+
+
+/* Пример */
+
+body {
+    font-family: "Poppins" ,serif; 
+    font-size: 12px;
+    font-weight: 300;
+    color: #E5E5E5;;
+}
+
+[class*="__container"] {
+	max-width: 1270px; 
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+} 
+
+.build-text {
+	max-width: 605px;
+}
+
+.building {
+	background: url("../img/01.jpg") center / cover no-repeat;
+}
+.building__container {
+	padding-top: 330px;
+	padding-bottom: 100px;
+}
+
+p {
+	line-height: 1.66; /* 20/12 */
+}
+
+.date {
+	margin-bottom: 15px;
+}
+.title {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.60; /* 40/25 */
+	margin-bottom: 15px;
+}
+
+
+
+.list {
+	padding-top: 96px;
+	padding-bottom: 150px;
+	background: rgb(11,56,106);
+	background: linear-gradient(149deg, rgba(11,56,106,1) 19%, rgba(43,118,190,1) 37%, rgba(50,50,161,1) 48%, rgba(62,46,112,1) 67%, rgba(2,0,36,1) 78%, rgba(66,143,158,1) 87%);
+}
+.list__container {
+	max-width: 1175px; 
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.list-title {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 1.07; /* 28/26 */
+	color: #212B36;
+	margin-bottom: 45px;
+}
+.list-blocks {
+}
+.list-block {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	color: #637381;
+	max-width: 309px;
+	margin-bottom: 40px;
+}
+
+* li {
+	margin-bottom: 15px;
+	padding-left: 30px;
+	min-height: 21px;
+}
+
+* li.last {
+	margin-bottom: 0;
+}
+
+.blue-circle li {
+	background: url(../img/icons/blue-circle.svg) 0 50% / 8px no-repeat ;
+	padding-left: 18px;
+	padding-top: 2px;
+}
+.blue-check li {
+	background: url(../img/icons/blue-check.svg) 0 0 / 20px no-repeat;
+
+}
+.green-check li {
+	background: url(../img/icons/green-check.svg) 0 0 / 20px no-repeat;
+}
+.red-circle li {
+	background: url(../img/icons/red-circle.svg) 0 0 / 20px no-repeat;
+}
+.blue-arrow li {
+	background: url(../img/icons/blue-arrow.svg) 0 0 / 20px no-repeat;
+}
+.blue-star li {
+	background: url(../img/icons/blue-star.svg) 0 0 / 20px no-repeat;
+}
+
+
+.sound {
+	padding-top: 81px;
+	padding-bottom: 83px;
+	background: linear-gradient(115deg, rgba(48,88,211,0) 70%, rgba(48,88,211,0.08) 70%), linear-gradient(115deg, rgba(48,88,211,0) 65%, rgba(48,88,211,0.08) 65%) #F4F7FF
+}
+.sound__container {
+	max-width: 1200px; 
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.sound-text-block {
+	display: inline-block;
+	max-width: 570px;
+	margin-right: 179px;
+}
+.blue {
+	font-family: 'Inter';
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.33; /* 24/18 */
+	color: #3056D3;
+	margin-bottom: 14px;
+}
+.sound-title {
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.25; /* 45/36 */
+	color: #212B36;
+	margin-bottom: 14px;
+}
+
+p.mod {
+	font-family: 'Inter';
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.50; /* 24/16 */
+	color: #637381;
+	margin-bottom: 35px;
+}
+
+.sound-button {
+	display: inline-block;
+	font-family: 'Inter';
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.50; /* 24/16 */
+	color: #FFFFFF;
+	padding: 10px 30px;
+	background-color: #3056D3;
+	border-radius: 30px;
+}
+
+.img {
+	font-size: 0;
+	max-width: 100%;
+}
+
+
+.practice {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background: url(../img/grace.jpg) 0 0 / cover no-repeat fixed;
+}
+
+.color-block {
+	vertical-align: top;
+	display: inline-block;
+	background-color: #574f4f9c;
+	max-width: 570px;
+	margin-right: 30px;
+}
+
+.image-block {
+	display: inline-block;
+	max-width: 520px;
+	max-height: 500px;
+	background: url(../img/tree.jpg) 0 0 / cover no-repeat fixed;
+	overflow: auto;
+}
