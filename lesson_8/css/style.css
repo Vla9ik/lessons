@@ -1,0 +1,347 @@
+/* ----------------- */
+/* --RESET STYLES--- */
+/* ----------------- */
+@import url("reset.css");
+
+
+/* ====================== ШРИФТИ =============================== */
+
+/* Встановлює насиченість (товщину) шрифту
+font-weight: цифрове значення або значення словом (словесне);
+успадковується
+
+100 - thin 
+300 - light 
+400 - Regular (normal) (за замовчуванням)
+500 - medium 
+600 - semibold 
+700 - bold 
+900 - black */
+
+/*  body {
+	/* font-family: "Poppins", sans-serif;  Times New Roman  за замовченням */
+	/* font-size: 14px;  16 за замовченням */
+	/* font-weight: 300;  400 (Regular) за замовченням */
+	/* color: #6c757d;  #000000 (чорний) за замовченням 
+} */
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap);
+
+/* &display=swap */
+
+
+/* Пример */
+
+body {
+    font-family: "Poppins" ,serif; 
+    font-size: 12px;
+    font-weight: 300;
+    color: #E5E5E5;;
+}
+
+[class*="__container"] {
+	max-width: 1274px; 
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+} 
+
+
+.vence {
+	background: url(../img/01.jpg) 0 0 / cover no-repeat;
+	padding-top: 330px;
+	padding-bottom: 100px;
+}
+
+
+.vence-text-blocks {
+	max-width: 605px;
+}
+
+.vence-text-blocks > *:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.date {
+	line-height: 1.66; /* 20/12 */
+}
+.vence-title {
+	color: #F8F9FA;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.60; /* 40/25 */
+}
+.vence-text {
+	line-height: 1.66;
+}
+
+
+.list {
+	background: rgb(238,174,202);
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%) 0 0 / cover no-repeat;
+	padding: 150px 0;
+}
+.list__container {
+	max-width: 1175px;
+}
+.list-title {
+	font-family: 'Inter';
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 1.07; /* 28/26 */
+	color: #212B36;
+	margin-bottom: 45px;
+}
+
+.list-block {
+	max-width: 309px;
+
+}
+
+.list-block li {
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1;
+	color: #637381;
+}
+.list-block li:not(:last-child) {
+	margin-bottom: 18px;
+}
+
+.list-blocks > *:not(:last-child) {
+	margin-bottom: 68px;
+}
+
+.list-block li::before {
+	margin-right: 10px;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+}
+
+.blue-circle li::before {
+	content: '';
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #3056D3;
+	transition: all .6s;
+}
+
+.blue-circle li:hover::before {
+	transform: scale(1.5);
+	background-color: rgb(136, 207, 22);
+}
+
+.blue-check li::before {
+	content: '';
+	display: inline-block;
+	background: url(../img/icons/blue-check.svg) 0 0 / cover no-repeat;
+	transition: all .8s;
+}
+
+.blue-check li:hover::before {
+	transform: rotate(360deg) scale(1.5);
+}
+
+.green-check li::before {
+	content: '';
+	display: inline-block;
+	background: url(../img/icons/green--check.svg) 0 0 / cover no-repeat;
+	transition: all .3s;
+}
+
+.green-check li:hover::before {
+	transform: scale(1.5);
+}
+
+.red-check li::before {
+	content: '';
+	display: inline-block;
+	background: url(../img/icons/red-circle.svg) 0 0 / cover no-repeat;
+	transition: all .5s;
+}
+
+.red-check li:hover::before {
+	transform: rotate(180deg) scale(1.5);
+}
+
+.blue-arrow li::before {
+	content: '';
+	display: inline-block;
+	background: url(../img/icons/blue-arrow.svg) 0 0 / cover no-repeat;
+	transition: all .6s;
+}
+
+.blue-arrow li:hover::before {
+	transform: rotate(-180deg) scale(1.2);
+}
+
+.blue-star li::before {
+	content: '';
+	display: inline-block;
+	background: url(../img/icons/blue-star.svg) 0 0 / cover no-repeat;
+	transition: all .8s;
+}
+
+.blue-star li:hover::before {
+	transform: rotate(270deg);
+}
+
+
+
+.sound {
+	background: linear-gradient(115deg, rgba(48,88,211,0) 70%, rgba(48,88,211,0.08) 70%), linear-gradient(115deg, rgba(48,88,211,0) 65%, rgba(48,88,211,0.08) 65%) #F4F7FF;
+	padding: 81px 0 83px;
+}
+.sound__container {
+	max-width: 1200px;
+}
+
+.sound-text-block > * {
+	margin-bottom: 14px;
+}
+
+.sound-text-block {
+	display: inline-block;
+	max-width: 570px;
+}
+.price {
+	font-family: 'Inter';
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.33; /* 24/18 */
+	color: #3056D3;
+	transition: all .5s;
+}
+
+.price:hover {
+	cursor: pointer;
+	color: aqua;
+}
+
+.title-sound {
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.25; /* 45/36 */
+	color: #212B36;
+}
+.about-sound {
+	font-family: 'Inter';
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.50; /* 24/16 */
+	color: #637381;
+	margin-bottom: 35px;
+}
+.sound-link {
+	display: inline-block;
+	padding: 10px 30px;
+	background-color: #3056D3;
+	font-family: 'Inter';
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #FFFFFF;
+	margin-bottom: 35px;
+	border-radius: 30px;
+	transition: all .6s;
+}
+
+.sound-link:hover {
+	background-color: #a230d3;
+	text-decoration: underline;
+}
+
+.sound-text-block > *:last-child {
+	margin-bottom: 0;
+}
+
+.sound-img {
+	margin-left: 179px;
+}
+
+
+
+.practice {
+	background: rgb(131,58,180);
+	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,225,253,1) 50%, rgba(252,176,69,1) 100%);
+	padding: 100px 0;
+
+}
+
+.text-blocks {
+	max-width: 550px;
+}
+
+.text-blocks > * {
+	margin-bottom: 20px;
+}
+
+.text-title {
+	font-weight: 700;
+	font-size: 20px;
+	color: #d3aa30;
+	margin-bottom: 30px;
+} 
+
+.p-blocks p {
+	margin-bottom: 10px;
+}
+
+.p-blocks p:last-child {
+	margin-bottom: 0;
+}
+
+.p-blocks p:nth-child(odd) {
+	background-color: #29d164;
+}
+
+.p-blocks p:nth-child(even) {
+	background-color: #a1d129;
+}
+
+.p-blocks .practice-link {
+	color: rgb(255, 0, 0);
+}
+
+.p-blocks .practice-link:hover, .practice-link:visited {
+	text-decoration: underline;
+	color: #ffea00;
+}
+
+.p-blocks p:first-child {
+	background-color: #0c37f5;
+}
+
+
+
+
+.p-blocks {
+	font-weight: 300;
+	font-size: 16px;
+
+}
+.button-link {
+	display: inline-block;
+	font-weight: 700;
+	font-size: 30px;
+	padding: 15px 30px;
+	background-color: #6c1863;
+	border-radius: 30px;
+	margin-bottom: 25px;
+	transition: all .8s;
+}
+
+.button-link:hover {
+	background-color: rgb(23, 211, 55);
+	color: #d39a30;
+}
+
+
+.text-blocks > *:last-child {
+	margin-bottom: 0;
+}
