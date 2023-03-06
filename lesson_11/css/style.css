@@ -72,7 +72,7 @@ body {
 
 
 .menu__item:not(:last-child) {
-	margin-right: 45px;
+	margin-right: 44px;
 }
 
 .menu__item:nth-child(3) {
@@ -96,6 +96,16 @@ body {
 	border-radius: 5px;
 	padding: 10px 21px;
 }
+
+.menu__link::after {
+	content: "";
+	display: inline-block;
+	width: 11px;
+	height: 6px;
+	background: url("../img/icons/check.svg") 0 0  no-repeat;
+	margin-left: 13px;
+}
+
 .link-categories {
 
 }
@@ -142,31 +152,24 @@ z-index: 3;
 
 
 .icon__link span {
+	display: inline-block;
 	position: absolute;
-	bottom: 17px;
-	left: 20px;
+	bottom: 15px;
+	left: 15px;
 	color: #fff;
 	font-weight: 400;
 	font-size: 11px;
 	line-height: 1.2;
-}
-
-.icon__link span::before {
-	content: "";
-	display: inline-block;
-	position: absolute;
-	top: 0;
-	left: 0;
+	background-color: blue;
 	border-radius: 50%;
-	z-index: -1;
-	text-align: center;
+	padding: 2px 4px;
 	width: 16px;
 	height: 16px;
-	background-color: #3056D3;
+	text-align: center;
 }
 
-.icon__img {
-}
+
+
 
 .icon__img {
 	max-width: 100%;
