@@ -42,7 +42,7 @@ body {
 }
 
 .wrapper {
-	overflow: hidden;
+	overflow: clip;
 	min-height: 100%;
 	position: relative;
 }
@@ -65,11 +65,21 @@ body {
 }
 .header__menu {
 }
-.menu > * {
+.menu > .menu__item {
 	padding: 30px 0;
+	display: inline-block;
+	vertical-align: middle;
 }
 
+.menu > *:nth-child(2) {
+	display: inline-block;
+	margin-right: 45px;
+}
 
+.menu__one-li {
+	display: inline-block;
+	padding: 30px 0;
+}
 
 .menu__item:not(:last-child) {
 	margin-right: 44px;
@@ -79,15 +89,11 @@ body {
 	margin-right: 131px;
 }
 
-.menu__item {
-	display: inline-block;
-	vertical-align: middle;
-	position: relative;
-}
+
 .menu__logo  {
 	max-width: 100%;
 }
-.menu__link {
+.menu__item_mod {
 	display: inline-block;
 	font-weight: 600;
 	font-size: 16px;
@@ -98,7 +104,7 @@ body {
 	padding: 10px 21px;
 }
 
-.menu__link::after {
+.menu__item_mod::after {
 	content: "";
 	display: inline-block;
 	width: 11px;
@@ -109,26 +115,70 @@ body {
 }
 
 
-.menu__link:hover::after {
+.menu__item_mod:hover::after {
 	transform: rotate(180deg);
+}
+
+.menu__one-li {
+	position: relative;
+	display: inline-block;
+}
+
+.menu__one-li:hover .menu__sub-menu {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: all;
 }
 
 
 .menu__sub-menu {
+	min-width: 180px;
+	padding: 22px 28px 22px 24px;
 	position: absolute;
-	top: 100%;
+	top: 110%;
 	left: 0;
 	background-color: #fff;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
 }
+
+.menu__sub-menu::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 33px;
+	height: 20px;
+	top: -10px;
+	left: 10px;
+	background: url(../img/icons/triangle.svg) 0 0 no-repeat;
+}
+
 .sub-menu {
 }
 .sub-menu__item {
+	display: inline-block;
+}
+
+.sub-menu__link {
+	display: inline-block;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
 	color: #637381;
+	transition: all .4s;
 }
-.sub-menu__link {
+
+.sub-menu__link::after {
+	content: "";
+	display: inline-block;
+	background: url(../img/icons/blue-check.svg) 0 0 no-repeat;
+	width: 10px;
+	height: 5px;
+}
+
+.sub-menu__link:hover {
+	color: #3056D3;
 }
 
 .menu__list {
@@ -188,10 +238,11 @@ z-index: 3;
 	width: 16px;
 	height: 16px;
 	text-align: center;
+	transition: all .15s;
 }
 
 .icon__link:hover span {
-	background-color: #566fc0;
+	background-color: #238fc5;
 }
 
 
