@@ -65,7 +65,7 @@ body {
 }
 .header__menu {
 }
-.menu {
+.menu > * {
 	padding: 30px 0;
 }
 
@@ -76,12 +76,13 @@ body {
 }
 
 .menu__item:nth-child(3) {
-	margin-right: 154px;
+	margin-right: 131px;
 }
 
 .menu__item {
 	display: inline-block;
 	vertical-align: middle;
+	position: relative;
 }
 .menu__logo  {
 	max-width: 100%;
@@ -104,11 +105,32 @@ body {
 	height: 6px;
 	background: url("../img/icons/check.svg") 0 0  no-repeat;
 	margin-left: 13px;
+	transition: all .15s;
 }
 
-.link-categories {
 
+.menu__link:hover::after {
+	transform: rotate(180deg);
 }
+
+
+.menu__sub-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #fff;
+}
+.sub-menu {
+}
+.sub-menu__item {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #637381;
+}
+.sub-menu__link {
+}
+
 .menu__list {
 }
 .list {
@@ -160,7 +182,7 @@ z-index: 3;
 	font-weight: 400;
 	font-size: 11px;
 	line-height: 1.2;
-	background-color: blue;
+	background-color: #3056D3;
 	border-radius: 50%;
 	padding: 2px 4px;
 	width: 16px;
@@ -168,7 +190,9 @@ z-index: 3;
 	text-align: center;
 }
 
-
+.icon__link:hover span {
+	background-color: #566fc0;
+}
 
 
 .icon__img {
