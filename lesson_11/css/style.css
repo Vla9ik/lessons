@@ -1,0 +1,145 @@
+/* ----------------- */
+/* --RESET STYLES--- */
+/* ----------------- */
+@import url("reset.css");
+
+
+/* ====================== ШРИФТИ =============================== */
+
+@import url(https://fonts.googleapis.com/css?family=Inter:500,600,700&display=swap);
+
+/* Встановлює насиченість (товщину) шрифту
+font-weight: цифрове значення або значення словом (словесне);
+успадковується
+
+100 - thin 
+300 - light 
+400 - Regular (normal) (за замовчуванням)
+500 - medium 
+600 - semibold 
+700 - bold 
+900 - black */
+
+/*  body {
+	/* font-family: "Poppins", sans-serif;  Times New Roman  за замовченням */
+	/* font-size: 14px;  16 за замовченням */
+	/* font-weight: 300;  400 (Regular) за замовченням */
+	/* color: #6c757d;  #000000 (чорний) за замовченням 
+} */
+
+
+/* &display=swap */
+
+
+/* Пример */
+
+body {
+    font-family: "Inter", sans-serif; 
+    font-size: 16px;
+    font-weight: 500;
+	color: #637381;
+	background-color: #4cd2b3;
+}
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+}
+
+[class*="__container"] {
+	max-width: 1200px; 
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+} 
+
+
+.header {
+	background-color: #fff;
+	color: #212B36;
+}
+.wrapper__header {
+}
+.header__container {
+}
+.header__menu {
+}
+.menu {
+	padding: 30px 0;
+}
+
+
+
+.menu__item:not(:last-child) {
+	margin-right: 45px;
+}
+
+.menu__item:nth-child(3) {
+	margin-right: 155px;
+}
+
+.menu__item {
+	display: inline-block;
+	vertical-align: middle;
+}
+.menu__logo  {
+	max-width: 100%;
+}
+.menu__link {
+	display: inline-block;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.50; /* 24/16 */
+	color: #212B36;
+	background-color: #F4F7FF;
+	border-radius: 5px;
+	padding: 10px 21px;
+}
+.link-categories {
+
+}
+.menu__list {
+}
+.list {
+}
+.list__item {
+	display: inline-block;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #212B36;
+	transition: all .7s;
+}
+
+.list__item:not(:last-child) {
+	margin-right: 40px;
+}
+
+
+
+.list__item:hover {
+	color: #3056D3;
+}
+
+
+.icon {
+
+}
+.icon__block {
+	display: inline-block;
+}
+
+.icon__block:not(:last-child) {
+	margin-right: 20px;
+}
+
+.icon__link {
+display: inline-block;
+}
+
+
+.icon__img {
+	max-width: 100%;
+	vertical-align: middle;
+}
