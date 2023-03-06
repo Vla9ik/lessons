@@ -76,7 +76,7 @@ body {
 }
 
 .menu__item:nth-child(3) {
-	margin-right: 155px;
+	margin-right: 154px;
 }
 
 .menu__item {
@@ -136,8 +136,29 @@ body {
 
 .icon__link {
 display: inline-block;
+position: relative;
+z-index: 3;
 }
 
+.icon__link span {
+	color: #fff;
+	display: inline-block;
+	position: absolute;
+	z-index: 1;
+	bottom: 13px;
+	left: 16px; 
+}
+
+.icon__link span::before {
+	content: "";
+	position: absolute;
+	z-index: 0;
+	display: inline-block;
+	background-color:  #3056D3;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+}
 
 .icon__img {
 	max-width: 100%;
