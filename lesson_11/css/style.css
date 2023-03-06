@@ -6,7 +6,7 @@
 
 /* ====================== ШРИФТИ =============================== */
 
-@import url(https://fonts.googleapis.com/css?family=Inter:500,600,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Inter:regural,500,600,700&display=swap);
 
 /* Встановлює насиченість (товщину) шрифту
 font-weight: цифрове значення або значення словом (словесне);
@@ -140,24 +140,32 @@ position: relative;
 z-index: 3;
 }
 
+
 .icon__link span {
-	color: #fff;
-	display: inline-block;
 	position: absolute;
-	z-index: 1;
-	bottom: 13px;
-	left: 16px; 
+	bottom: 17px;
+	left: 20px;
+	color: #fff;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 1.2;
 }
 
 .icon__link span::before {
 	content: "";
-	position: absolute;
-	z-index: 0;
 	display: inline-block;
-	background-color:  #3056D3;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	z-index: -1;
+	text-align: center;
 	width: 16px;
 	height: 16px;
-	border-radius: 50%;
+	background-color: #3056D3;
+}
+
+.icon__img {
 }
 
 .icon__img {
