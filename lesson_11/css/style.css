@@ -93,7 +93,7 @@ body {
 .menu__logo  {
 	max-width: 100%;
 }
-.menu__item_mod {
+.menu__link{
 	display: inline-block;
 	font-weight: 600;
 	font-size: 16px;
@@ -104,7 +104,7 @@ body {
 	padding: 10px 21px;
 }
 
-.menu__item_mod::after {
+.menu__link::after {
 	content: "";
 	display: inline-block;
 	width: 11px;
@@ -115,7 +115,7 @@ body {
 }
 
 
-.menu__item_mod:hover::after {
+.menu__link:hover::after {
 	transform: rotate(180deg);
 }
 
