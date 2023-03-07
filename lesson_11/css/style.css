@@ -133,7 +133,7 @@ body {
 
 .menu__sub-menu {
 	min-width: 180px;
-	padding: 22px 28px 22px 24px;
+	padding: 22px 0 22px 0;
 	position: absolute;
 	top: 110%;
 	left: 0;
@@ -154,37 +154,110 @@ body {
 	background: url(../img/icons/triangle.svg) 0 0 no-repeat;
 }
 
-.sub-menu {
-}
 .sub-menu__item {
-	display: inline-block;
+	display: block;
+	padding: 0 28px 0 24px;
+}
+
+.sub-menu__item:not(:last-child) {
+	margin-bottom: 13px;
 }
 
 .sub-menu__link {
-	display: inline-block;
+	position: relative;
+	display: block;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
 	color: #637381;
 	transition: all .4s;
+	text-align: left;
+	transition: all .5s;
 }
 
 .sub-menu__link::after {
 	content: "";
 	display: inline-block;
+	position: absolute;
+	top: 6px;
+	right: -22px;
 	background: url(../img/icons/blue-check.svg) 0 0 no-repeat;
 	width: 10px;
-	height: 5px;
+	height: 10px;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .5s;
 }
-
 .sub-menu__link:hover {
 	color: #3056D3;
 }
+.sub-menu__link:hover::after {
+	opacity: 1;
+	visibility: visible;
+}
 
-.menu__list {
+
+.sub-menu__item_mod {
+ 	position: relative;
+
 }
-.list {
+
+.sub-menu__item_mod:hover .sub-menu__block  {
+	opacity: 1;
+	visibility: visible;	
 }
+
+.sub-menu__block {
+	position: absolute;
+	top: -12px;
+	left: 180px;
+	min-width: 652px;
+	background-color: #fff;
+	opacity: 0;
+	visibility: hidden;	
+}
+.double-list {
+	padding: 30px;
+}
+.double-list__item {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.double-list__item:not(:last-child) {
+	margin-right: 45px;
+}
+
+.double-list__item:nth-child(2) {
+	margin-right: 69px;
+}
+
+
+
+.double-list__title, .double-list__li   {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.double-list__title	{
+	color: #212B36;
+	margin-bottom: 20px;
+}
+.double-list__li a {
+	color: #637381;
+	transition: all .5s;
+}
+
+.double-list__li a:hover {
+	color: #3056D3;
+}
+
+
+.double-list__li:not(:last-child) {
+	margin-bottom: 12px;
+}
+
 .list__item {
 	display: inline-block;
 	font-weight: 600;
@@ -204,10 +277,6 @@ body {
 	color: #3056D3;
 }
 
-
-.icon {
-
-}
 .icon__block {
 	display: inline-block;
 }
@@ -250,3 +319,51 @@ z-index: 3;
 	max-width: 100%;
 	vertical-align: middle;
 }
+
+.double-list__item {
+}
+.list-double {
+	display: inline-block;
+	max-width: 220px;
+	background: url(../img/discount.jpg) 0 0 / cover no-repeat;
+	padding: 65px 47px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.list-double > *:not(:last-child) {
+	margin-bottom: 10px;
+}  
+
+.list-double__title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 1.2;
+	color: #FFFFFF;
+}
+
+.list-double__title {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.2;
+	color: #FFFFFF;
+	margin-bottom: 21px;
+}
+.list-double__link {
+	display: inline-block;
+	padding: 7px 15px;
+	background-color: #3056D3;
+	border-radius: 2px;
+	font-weight: 700;
+	font-size: 11px;
+	line-height: 1.18; /* 13/11 */
+	color: #fff;
+	transition: all .5s;
+}
+
+
+.list-double__link:hover {
+background-color: #31bdef;
+}
+
+
