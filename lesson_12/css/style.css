@@ -1471,6 +1471,7 @@ animation:  poroh 4.2s linear 1 normal running 4s forwards;
 	top: 58%;
 	left: 30%;
 	width: 612px;
+	z-index: 5;
 }
 
 
