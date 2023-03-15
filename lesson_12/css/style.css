@@ -1468,7 +1468,7 @@ animation:  poroh 4.2s linear 1 normal running 4s forwards;
 
 .sternenko {
 	position: absolute;
-	top: 55%;
+	top: 58%;
 	left: 30%;
 	width: 612px;
 }
@@ -1490,13 +1490,14 @@ animation:  poroh 4.2s linear 1 normal running 4s forwards;
 	z-index: 3;
     position: absolute;
     bottom: 63%;
-    left: 44%;
+    left: 45%;
     content: "";
     display: inline-block;
-    width: 65px;
+    width: 55px;
     height: 14px;
     background-color: rgb(26, 16, 22);
-    animation: mouse 0.2s linear 10 normal running 52s;
+	border-radius: 10px;
+    animation: mouse 0.1s linear 10 normal running 52s;
     opacity: 0;
     visibility: hidden;
 }
