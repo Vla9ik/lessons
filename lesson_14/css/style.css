@@ -1,0 +1,227 @@
+/* ----------------- */
+/* --RESET STYLES--- */
+/* ----------------- */
+@import url("reset.css");
+@import url("common.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap");
+
+/* ====================== ШРИФТИ =============================== */
+
+/* Встановлює насиченість (товщину) шрифту
+font-weight: цифрове значення або значення словом (словесне);
+успадковується
+
+100 - thin 
+300 - light 
+400 - Regular (normal) (за замовчуванням)
+500 - medium 
+600 - semibold 
+700 - bold 
+900 - black */
+
+/*  body {
+	/* font-family: "Poppins", sans-serif;  Times New Roman  за замовченням */
+	/* font-size: 14px;  16 за замовченням */
+	/* font-weight: 300;  400 (Regular) за замовченням */
+	/* color: #6c757d;  #000000 (чорний) за замовченням 
+} */
+
+
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+
+
+
+/* Пример */
+
+body {
+    font-family: "Poppins", serif; 
+    font-size: 12px;
+    font-weight: 300;
+    color: #495057;
+}
+
+[class*="__container"] {
+	max-width: 1270px; 
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+
+.article {
+	padding: 100px 0;
+}
+
+.article__header:not(:last-child) {
+	margin-bottom: 45px;
+}
+
+.header-article {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+.header-article__categories {
+	display: inline-block;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 2.08; /* 25/12 */
+	color: rgba(73, 80, 87, 0.5);
+	transition: color 0.3s;
+}
+
+.header-article__categories::after {
+	content: "+";
+	display: inline-block;
+	line-height: 2.08;
+	padding-left: 7px;
+} 
+
+
+.header-article__list {
+	display: flex;
+	column-gap: 20px;
+	row-gap: 10px;
+	flex-wrap: wrap;
+}
+
+.header-article__link {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 2.08; /* 25/12 */
+	color: rgba(73, 80, 87, 0.5);
+	transition: color 0.3s;
+}
+
+.header-article__categories.active,
+.header-article__categories:hover,
+.header-article__link:hover, .header-article__link.active {
+	color: #495057;
+}
+
+.article__items {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+	row-gap: 45px;
+	margin-bottom: 60px;
+}
+.article__column {
+	padding: 0 15px;
+	flex: 0 0 33.3333%;
+	align-items: flex-start;
+}
+
+.item-article > *:first-child {
+	margin-bottom: 30px;
+}
+
+.item-article > *:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+
+
+
+.item-article__img {
+	position: relative;
+	overflow: hidden;
+}
+.item-article__img img {
+	max-width: 100%;
+	transition: transform 0.8s;
+}
+
+.item-article__img img:hover {
+	transform: scale(1.05);
+}
+
+.item-article__categories {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 8px;
+	line-height: 2.50; /* 20/8 */
+	text-align: center;
+	color: #F8F9FA;
+	padding: 2px 12px;
+	background-color: rgba(33, 37, 41, 0.3);
+	border-radius: 3px;
+	transition: background-color 0.5s;
+}
+
+.item-article__categories:hover {
+	background-color: rgba(33, 37, 41, 0.6);
+}
+
+.item-article__date,.item-article__text , 
+.item-article__author  {
+	line-height: 1.66; /* 20/12 */
+}
+.item-article__link {
+	display: inline-block;
+}
+
+.item-article__title {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6; /* 40/25 */
+	color: #212529;
+	transition: color 0.3s;
+}
+
+.item-article__link:hover .item-article__title  {
+	color: #8bc731;
+}
+
+.item-article__author {
+	display: block;
+	border-top: 1px solid #E5E5E5;
+	padding-top: 15px;
+	transition: color 0.3s;
+}
+
+.item-article__author:hover {
+	color: #4d0909;
+}
+
+.btn-article {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+	
+
+.btn-article__link {
+	display: inline-block;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 2.08; /* 25/12 */
+	text-align: center;
+	color: #F8F9FA;
+	padding: 8px 50px;
+	background-color: #212529;
+	border-radius: 3px;
+	transition: all 0.5s;
+}
+
+.btn-article__link:hover {
+	background-color: #21252901;
+	border: 1px solid black;
+	color: #000;
+}
+
