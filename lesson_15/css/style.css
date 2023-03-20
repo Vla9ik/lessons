@@ -1,0 +1,264 @@
+/* ----------------- */
+/* --RESET STYLES--- */
+/* ----------------- */
+@import url("reset.css");
+@import url("common.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500,700&display=swap");
+
+
+/* ====================== ШРИФТИ =============================== */
+
+/* Встановлює насиченість (товщину) шрифту
+font-weight: цифрове значення або значення словом (словесне);
+успадковується
+
+100 - thin 
+300 - light 
+400 - Regular (normal) (за замовчуванням)
+500 - medium 
+600 - semibold 
+700 - bold 
+900 - black */
+
+/*  body {
+	/* font-family: "Poppins", sans-serif;  Times New Roman  за замовченням */
+	/* font-size: 14px;  16 за замовченням */
+	/* font-weight: 300;  400 (Regular) за замовченням */
+	/* color: #6c757d;  #000000 (чорний) за замовченням 
+} */
+
+
+
+/* Пример */
+
+body {
+    font-family: "Poppins", serif; 
+    font-size: 18px;
+    font-weight: 400;
+    color: #6C757D;
+}
+
+[class*="__container"] {
+	max-width: 1230px; 
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+} 
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+
+
+
+.minimalist {
+	padding: 100px 0;
+}
+.minimalist__items {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.minimalist__text {
+	margin-bottom: 53px;
+}
+.text-minimalist {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 40px;
+}
+.text-minimalist__title {
+	text-align: center;
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 1.4;
+	color: #000000;
+}
+.text-minimalist__text  {
+	max-width: 518px;
+	text-align: center;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.60;
+	color: #000000;
+}
+
+.text-minimalist__text p {
+	flex: 0 1 518px;
+}
+.minimalist__img {
+	margin-bottom: 100px;
+	overflow: hidden;
+}
+.minimalist__img img {
+	max-width: 100%;
+	transition: transform 0.8s;
+}
+
+.minimalist__img img:hover {
+	transform: scale(1.05);
+}
+
+.description {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 32px;
+	margin-bottom: 81px;
+}
+.description__left-side {
+	flex: 0 0 50%;
+}
+
+.left-side__title, .right-side__title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.40;
+	color: #333333;
+	margin-bottom: 24px;
+}
+.left-side__text, .right-side__text, .left-side__date, .left-side__link  {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.60;
+	color: #9C9C9C;
+	margin-bottom: 60px;
+	transition: color 0.3s;
+}
+
+.left-side__link:hover {
+	color: #000000;
+}
+
+.left-side__footer {
+	display: flex;
+	align-items: center;
+	gap: 80px;
+}
+
+.description__right-side {
+	flex: 0 0 50%;
+}
+
+.right-side__text p:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+.list__images {
+	display: flex;
+	gap: 32px;
+}
+.list__image {
+	display: flex;
+}
+
+.list__item {
+	overflow: hidden;
+} 
+
+.list__item img {
+	max-width: 100%;
+	transition: transform 0.8s;
+}
+
+.list__item img:hover {
+	transform: scale(1.05);
+}
+
+.list__item_small {
+	flex: 0 1 50%;
+}
+
+.list__item_big {
+	flex: 0 1 100%;
+}
+
+.achievement {
+	padding: 100px 0;
+}
+
+.achievement__header {
+	margin-bottom: 40px;
+
+}
+.achievement__title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #000000;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 26px;
+}
+.achievement__title::after {
+	content: "";
+	display: inline-block;
+	line-height: 1.5;
+	background-color: #000000;
+	height: 2px;
+	width: 464px;
+}
+
+
+.achievement__items {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+.achievement__item {
+	display: flex;
+	column-gap: 120px;
+	row-gap: 30px;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.achievement__img {
+	overflow: hidden;
+}
+.achievement__img img{
+	max-width: 100%;
+	transition: transform 0.8s;
+}
+.achievement__img img:hover {
+	transform: scale(1.05);
+}
+
+.achievement__descr {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex: 0 0 340px;
+	row-gap: 20px;
+	column-gap: 20px;
+}
+
+.achievement__subtitle {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.40;
+	color: #333333;
+}
+.achievement__text {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.60;
+	color: #9C9C9C;
+}
