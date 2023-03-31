@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 16</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header></header>
+        <main class="page">
+            <div class="page__checkout checkout">
+                <div class="checkout__container">
+                    <div class="checkout__body">
+                        <form method="GET" enctype="multipart/form-data" action="#"
+                            class="checkout__form form-checkout">
+                            <h1 class="form-checkout__title">Checkout</h1>
+                            <div class="form-checkout__products">
+                                <p>There are <span>3</span> products in your cart</p>
+                            </div>
+                            <h2 class="form-checkout__details">Billing Details</h2>
+                            <div class="form-checkout__box">
+                                <div class="form-checkout__line">
+                                    <input autocomplete="off" required name="firstname" placeholder="First name*"
+                                        value="" class="form-checkout__input" type="text">
+                                </div>
+                                <div class="form-checkout__line">
+                                    <input autocomplete="off" required name="lastname" placeholder="Last name*" value=""
+                                        class="form-checkout__input" type="text">
+                                </div>
+                                <div class="form-checkout__line">
+                                    <input autocomplete="off" required name="address" placeholder="Address*" value=""
+                                        class="form-checkout__input" type="text">
+                                </div>
+                                <div class="form-checkout__line">
+                                    <input autocomplete="off" name="address-2" placeholder="Address line 2" value=""
+                                        class="form-checkout__input" type="text">
+                                </div>
+                                <div class="form-checkout__line">
+                                    <select class="form-checkout__list" placeholder="country" name="list">
+                                        <option value="">Country*</option>
+                                        <option value="1">USA</option>
+                                        <option value="2">Germamy</option>
+                                        <option value="3">China</option>
+                                    </select>
+                                </div>
+                                <div class="form-checkout__line">
+                                    <input autocomplete="off" required name="firstname" placeholder="City/Town*"
+                                        value="" class="form-checkout__input" type="text">
+                                </div>
+                                <div class="form-checkout__line">
+                                    <input autocomplete="off" required name="firstname" placeholder="Postcode / ZIP*"
+                                        value="" class="form-checkout__input" type="text">
+                                </div>
+                                <div class="form-checkout__line">
+                                    <input autocomplete="off" required name="firstname" placeholder="Phone*" value=""
+                                        class="form-checkout__input" type="tel">
+                                </div>
+                                <div class="form-checkout__line">
+                                    <input autocomplete="off" required name="firstname" placeholder="Postcode / ZIP*"
+                                        value="" class="form-checkout__input" type="text">
+                                </div>
+                                <div class="form-checkout__line">
+                                    <input autocomplete="off" required name="firstname" placeholder="Phone*" value=""
+                                        class="form-checkout__input" type="tel">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
