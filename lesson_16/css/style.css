@@ -232,7 +232,14 @@ body {
 	font-size: 16px;
 	line-height:1.50; /* 24/16 */
 	color: #FFFFFF;
+	border: 1px solid #000;
+	transition: all .5s;
 }
+
+.btn__submit-form:hover {
+background-color: #fff;
+color: #000000;
+} 
 
 
 .page__shopping {
@@ -301,6 +308,11 @@ body {
 	font-size: 14px;
 	line-height: 1.42; /* 20/14 */
 	color: #0F6DB1;
+	transition: all 0.3s;
+}
+
+.btn-shopping__forgot:hover {
+	text-decoration: underline;
 }
 
 .form-second__box {
@@ -382,6 +394,17 @@ body {
 	margin-right: 25px;
 }
 
+.next__submit, .btn-shopping__submit {
+	border: 1px solid #000;
+	transition: all .5s;
+	transition: all .5s;
+}
+
+.next__submit:hover, .btn-shopping__submit:hover {
+	background-color: #fff;
+	color: #000000;
+	} 
+
 .form-second__title {
 	padding-bottom: 40px;
 	border-bottom: 1px solid #C4C4C4;
@@ -424,6 +447,7 @@ body {
 	line-height: 1.42; /* 20/14 */
 	color: #000000;
 }
+
 
 .btn__label::before {
 	content: "";
