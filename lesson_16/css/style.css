@@ -64,10 +64,7 @@ body {
 .checkout__body {
 	max-width: 700px;
 }
-.checkout__form {
-}
-.form-checkout {
-}
+
 .form-checkout__title {
 	font-weight: 700;
 	font-size: 44px;
@@ -164,9 +161,6 @@ body {
 .form-checkout__checkbox {
 	margin-bottom: 55px;
 }
-.checkbox {
-
-}
 
 .checkbox__item:not(:last-child) {
 	margin-bottom: 25px;
@@ -211,8 +205,7 @@ body {
 .form-checkout__btn {
 	max-width: 480px;
 }
-.btn {
-}
+
 .btn__title {
 	font-weight: 600;
 	font-size: 20px;
@@ -245,24 +238,18 @@ body {
 .page__shopping {
 	padding-bottom: 80px;
 }
-.shopping {
-}
-.shopping__container {
-}
+
 .shopping__body {
 	max-width: 606px;
 }
 .shopping__form {
 	margin-bottom: 40px;
 }
-.form-shopping {
-}
+
 .form-shopping__title {
 	margin-bottom: 34px;
 }
-.form-shopping__box {
 
-}
 .form-shopping__item {
 	display: flex;
 	width: 100%;
@@ -316,12 +303,6 @@ body {
 	color: #0F6DB1;
 }
 
-
-.shopping__form-second {
-
-}
-.form-second {
-}
 .form-second__box {
 	margin-bottom: 46px;
 }
