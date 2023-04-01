@@ -1,0 +1,29 @@
+.shipping-title {
+    font-family: 'Oswald';
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 1;
+	color: #000000;
+}
+
+.shopping-btn {
+    padding: 15px 40px;
+	font-family: 'Oswald';
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.50; /* 21/14 */
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background-color: #000;
+}
+
+.shopping-btn_mod {
+    padding: 15px 40px;
+	font-family: 'Oswald';
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.50; /* 21/14 */
+	letter-spacing: 0.5px;
+    color: #828282;
+}

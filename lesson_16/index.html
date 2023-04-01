@@ -39,7 +39,7 @@
                                     <input autocomplete="off" name="address-2" placeholder="Address line 2" value=""
                                         class="form-checkout__input" type="text">
                                 </div>
-                                <div class="form-checkout__line">
+                                <div class="form-checkout__line form-checkout__line_slt">
                                     <select class="form-checkout__list" placeholder="country" name="list">
                                         <option value="">Country*</option>
                                         <option value="1">USA</option>
@@ -67,6 +67,142 @@
                                     <input autocomplete="off" required name="firstname" placeholder="Phone*" value=""
                                         class="form-checkout__input" type="tel">
                                 </div>
+                            </div>
+                            <div class="form-checkout__textarea">
+                                <textarea autocomplete="off" name="message">Additional information</textarea>
+                            </div>
+                            <div class="form-checkout__checkbox checkbox">
+                                <div class="checkbox__item">
+                                    <input id="account" required autocomplete="off" value="account" checked
+                                        type="checkbox" class="checkbox__chk">
+                                    <label class="checkbox__label" for="account">Create Account</label>
+                                </div>
+                                <div class="checkbox__item">
+                                    <input id="address" required autocomplete="off" value="address" type="checkbox"
+                                        class="checkbox__chk">
+                                    <label class="checkbox__label" for="address">Shipfdffg to a different
+                                        address?</label>
+                                </div>
+                            </div>
+                            <div class="form-checkout__btn btn">
+                                <h2 class="btn__title">Apply Coupon to get discount!</h2>
+                                <input autocomplete="off" required name="firstname" placeholder="Coupon code" value=""
+                                    type="text" class="btn__input"></input>
+                                <button class="btn__submit-form">Apply Code</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="page__shopping shopping">
+                <div class="shopping__container">
+                    <div class="shopping__body">
+                        <form method="GET" enctype="multipart/form-data" action="#"
+                            class="shopping__form form-shopping">
+                            <h2 class="form-shopping__title shipping-title">Shipping Address</h2>
+                            <div class="form-shopping__box">
+                                <div class="form-shopping__item">
+                                    <label for="email" class="form-shopping__label">Email Address<span>*</span></label>
+                                    <input id="email" required autocomplete="off" name="email"
+                                        placeholder="roni_cost@example.com" type="email" value=""
+                                        class="form-shopping__input">
+                                </div>
+                                <div class="form-shopping__item">
+                                    <label for="password" class="form-shopping__label">Password</label>
+                                    <input id="password" required autocomplete="off" name="password"
+                                        placeholder="******************" type="password" value=""
+                                        class="form-shopping__input">
+                                </div>
+                                <div class="form-shopping__item">
+                                    <label for="post-code" class="form-shopping__label">Zip/Postal Code</label>
+                                    <input id="post-code" required autocomplete="off" name="post-code" type="text"
+                                        value="" class="form-shopping__input">
+                                </div>
+                                <p class="form-shopping__message">You already have an account with us. Sign in or
+                                    continue as guest.</p>
+                                <div class="form-shopping__btn btn-shopping">
+                                    <button type="submit" class="btn-shopping__submit shopping-btn">login</button>
+                                    <a href="#" class="btn-shopping__forgot">Forgot Your Password?</a>
+                                </div>
+                            </div>
+                        </form>
+                        <form method="GET" enctype="multipart/form-data" action="#"
+                            class="shopping__form-second form-second">
+                            <div class="form-second__box">
+                                <div class="form-second__item">
+                                    <lable for="firstname-2" class="form-second__label">First Name<span> *</span>
+                                    </lable>
+                                    <input required id="firstname-2" autocomplete="off" value="" name="firstname-2"
+                                        type="text" class="form-second__input">
+                                </div>
+                                <div class="form-second__item">
+                                    <lable for="lastname-2" class="form-second__label">Last Name<span> *</span></lable>
+                                    <input id="lastname-2" name="lastname-2" autocomplete="off" value="" type="text"
+                                        class="form-second__input">
+                                </div>
+                                <div class="form-second__item">
+                                    <lable for="company" class="form-second__label">Company</lable>
+                                    <input name="company" id="company" value="" autocomplete="off" type="text"
+                                        class="form-second__input">
+                                </div>
+                                <div class="form-second__item">
+                                    <lable for="address-second-form" class="form-second__label">Street
+                                        Address<span> *</span></lable>
+                                    <div class="form-second__inputs inputs">
+                                        <input id="address-first" name="address-second-form" value="" autocomplete="off"
+                                            type="text" class="inputs__item">
+                                        <input id="address-second" autocomplete="off" value="" name="" type="text"
+                                            class="inputs__item">
+                                        <input id="address-third" type="text" autocomplete="off" value=""
+                                            class="inputs__item">
+                                    </div>
+                                </div>
+                                <div class="form-second__item">
+                                    <lable class="form-second__label">Country<span> *</span></lable>
+                                    <input type="text" class="form-second__input">
+                                </div>
+                                <div class="form-second__item">
+                                    <lable for="state" class="form-second__label">State/Province<span> *</span></lable>
+                                    <div class="form-second__wrapper">
+                                        <select id="state" class="form-second__list" name="second-list">
+                                            <option value="">Please select a region, state or province</option>
+                                            <option value="1">Colorado</option>
+                                            <option value="2">California</option>
+                                            <option value="3">Arizona</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-second__methods">
+                                <h2 class="form-second__title shipping-title ">Shipping Methods</h2>
+                                <div class="form-second__radio-wrapper">
+                                    <div class="form-second__radio radio">
+                                        <div class="radio__btn btn">
+                                            <input checked id="five-dollars" name="cost" value="5" type="radio"
+                                                class="btn__input">
+                                            <label for="five-dollars" class="btn__label">$5.00</label>
+                                        </div>
+                                        <div class="radio__choice">
+                                            <span>Fixed</span>
+                                            <span>Flat Rate</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-second__radio radio">
+                                        <div class="radio__btn btn">
+                                            <input id="ten-dollars" name="cost" value="10" type="radio"
+                                                class="btn__input">
+                                            <label for="ten-dollars" class="btn__label">$10.00</label>
+                                        </div>
+                                        <div class="radio__choice">
+                                            <span>Table Rate</span>
+                                            <span>Best Way</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-second__next next">
+                                <button type="submit" class="next__submit shopping-btn">next</button>
+                                <button type="reset" class="next__reset ">Back</button>
                             </div>
                         </form>
                     </div>
