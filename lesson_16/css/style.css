@@ -343,12 +343,29 @@ body {
 	color: #3F3F3F;
 }
 
+.form-second__wrapper {
+	position: relative;
+}
+
+.form-second__wrapper::after {
+	content: "";
+	position: absolute;
+	top: 19px;
+	right: 15px;
+	pointer-events: none;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: url(../img/icons/seond-form-arrow.svg) right / 100% no-repeat;
+}
+
 .form-second__wrapper ,
 .form-second__input {
 	flex: 0 1 74.42%; /* 451/606 */
 }
 
 .form-second__list {
+	appearance: none;
 	width: 100%;
 }
 
