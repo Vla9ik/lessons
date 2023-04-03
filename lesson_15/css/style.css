@@ -223,6 +223,7 @@ body {
 }
 
 .achievement__img {
+	flex: 0 1 62%; /* 746/1200 */
 	overflow: hidden;
 }
 .achievement__img img{
@@ -234,6 +235,7 @@ body {
 }
 
 .achievement__descr {
+	flex: 0 1 27%; /* 334/1200 */
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
