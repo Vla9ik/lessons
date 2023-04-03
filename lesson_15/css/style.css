@@ -165,7 +165,7 @@ body {
 
 .list__item {
 	flex: 0 1 50%;
-	max-height: 513px;
+	overflow: hidden;
 }
 .list__item:nth-child(3n+3) {
 	flex: 1 1 100%;
@@ -173,6 +173,11 @@ body {
 
 .list__item img {
 	max-width: 100%;
+	transition: transform 0.5s;
+}
+
+.list__item img:hover {
+	transform: scale(1.05);
 }
 
 .list__item:not(:last-child){
