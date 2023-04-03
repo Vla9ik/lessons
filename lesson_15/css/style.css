@@ -157,7 +157,7 @@ body {
 
 .minimalist__block-img {
 	display: flex;
-	row-gap: 32px;
+	column-gap: 32px;
 	flex-wrap: wrap;
 }
 
