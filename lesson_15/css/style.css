@@ -157,33 +157,26 @@ body {
 
 .minimalist__block-img {
 	display: flex;
-	column-gap: 32px;
 	flex-wrap: wrap;
+	column-gap: 32px;
 }
-
-
-
-.list__item:not(:last-child) {
-	margin-bottom: 32px;
+.list {
 }
-
 
 .list__item {
 	flex: 0 1 50%;
-	overflow: hidden;
-} 
-
+	max-height: 513px;
+}
 .list__item:nth-child(3n+3) {
 	flex: 1 1 100%;
 }
 
 .list__item img {
 	max-width: 100%;
-	transition: transform 0.8s;
 }
 
-.list__item img:hover {
-	transform: scale(1.05);
+.list__item:not(:last-child){
+	margin-bottom: 24px;
 }
 
 
