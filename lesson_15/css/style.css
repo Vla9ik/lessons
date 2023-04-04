@@ -93,9 +93,6 @@ body {
 	color: #000000;
 }
 
-.text-minimalist__text p {
-	flex: 0 1 518px;
-}
 .minimalist__img {
 	margin-bottom: 100px;
 	overflow: hidden;
@@ -110,13 +107,17 @@ body {
 }
 
 .minimalist__description {
+	margin-bottom: 81px;
+}
+
+.description__wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	gap: 32px;
-	margin-bottom: 81px;
+	margin: 0 -16px;
 }
 .description__left-side {
+	padding: 0 16px;
 	flex: 0 1 50%;
 }
 
@@ -132,8 +133,10 @@ body {
 	font-size: 18px;
 	line-height: 1.60;
 	color: #9C9C9C;
-	margin-bottom: 60px;
 	transition: color 0.3s;
+}
+.left-side__text {
+	margin-bottom: 60px;
 }
 
 .left-side__link:hover {
@@ -143,10 +146,12 @@ body {
 .left-side__footer {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	gap: 80px;
 }
 
 .description__right-side {
+	padding: 0 16px;
 	flex: 0 0 50%;
 }
 
@@ -162,7 +167,12 @@ body {
 }
 
 .list__row {
+	flex: 0 1 50%;
 	padding: 0 16px;
+}
+
+.list__row:nth-child(3n+3) {
+	flex: 1 1 100%;
 }
 
 .list__row:not(:last-child) {
@@ -170,11 +180,7 @@ body {
 }
 
 .list__item {
-	flex: 0 1 50%;
 	overflow: hidden;
-}
-.list__item:nth-child(3n+3) {
-	flex: 1 1 100%;
 }
 
 .list__item img {
@@ -268,3 +274,231 @@ body {
 	line-height: 1.60;
 	color: #9C9C9C;
 }
+
+@media (max-width: 907px) {
+	.minimalist__text {
+		margin-bottom: 45px;
+	}
+	.text-minimalist {
+		row-gap: 30px;
+	}
+	.text-minimalist__title {
+		font-size: 50px;
+	}
+	.text-minimalist__text {
+		max-width: 450px;
+		font-size: 16px;
+	}
+	.minimalist__img {
+		margin-bottom: 50px;
+	}
+} 
+@media (max-width: 991.98px) {
+	.achievement__title {
+		flex-direction: column;
+	}
+	.achievement__items {
+		gap: 35px;
+	}
+	.achievement__item  {
+		justify-content: center;
+		column-gap: 45px;
+	}
+	.achievement__img, .achievement__descrs {
+		flex: 0 1 50%;
+	}
+	.minimalist {
+		padding-bottom: 50px;
+	}
+	.achievement {
+		padding-top: 50px;
+	}
+}
+@media (max-width: 767.98px) {
+	.minimalist__img {
+		margin-bottom: 40px;
+	}
+	.description__wrapper {
+		margin: 0 -20px;
+	}
+	.description__left-side {
+		padding: 0 20px;
+	}
+	.left-side__title, .right-side__title {
+		font-size: 22px;
+	}
+	.left-side__text, .right-side__text, .left-side__date, .left-side__link {
+		font-size: 16px;
+	}
+	.left-side__text {
+		margin-bottom: 45px;
+	}
+	.minimalist__description  {
+		margin-bottom: 50px 0;
+	}
+	.achievement__subtitle  {
+		font-size: 22px;
+	}
+	.achievement__text  {
+		font-size: 16px;
+	}
+	.minimalist {
+		padding: 50px 0;
+	}
+	.achievement {
+		padding-top: 25px;
+	}
+}
+@media (max-width: 675px) {
+	.text-minimalist__title {
+		font-size: 46px;
+	}
+	.text-minimalist {
+		row-gap: 20px;
+	}
+	.minimalist  {
+		padding-bottom: 25px;
+	}
+	.achievement__item  {
+		column-gap: 25px;
+	}
+	.achievement__descr {
+		row-gap: 15px;
+	}
+ .achievement__text  {
+	font-size: 15px;
+ }
+} 
+@media (max-width: 627px) {
+	.minimalist__block-img {
+		margin: 0 -10px;
+	}
+	.list__row {
+		padding: 0 10px;
+	}
+	.achievement__img {
+		display: none;
+	}
+	.achievement__descr  {
+		justify-content: center;
+		align-items: center;
+		flex: 0 1 275px;
+	}
+	.achievement__title  {
+		gap: 15px;
+	}
+	.achievement__title::after {
+		width: 300px;
+	}
+	.achievement__text {
+		text-align: center;
+		font-size: 14px;
+	}
+} 
+@media (max-width: 576px) {
+	.minimalist {
+		padding-top: 25px;
+		padding-bottom: 5px;
+	}
+	.achievement {
+		padding-top: 10px;
+	}
+}
+@media (max-width: 554px) {
+	.description__wrapper {
+		flex-direction: column;
+		row-gap: 40px;
+	}
+	.left-side__title, .right-side__title {
+		text-align: center;
+	}
+	.left-side__text, .right-side__text, .left-side__date {
+		text-align: justify;
+	}
+	.right-side__text p:not(:last-child) {
+	margin-bottom: 20px;
+	}
+}
+@media (max-width: 526px) {
+	.text-minimalist__title {
+	font-size: 40px;
+	}
+	.text-minimalist__text {
+	font-size: 14px;
+	}
+	.minimalist__text  {
+		margin-bottom: 30px;
+	}
+} 
+@media (max-width: 479.98px) {
+	.text-minimalist__title {
+		font-size: 35px;
+	}
+	.text-minimalist__text {
+font-size: 13px;
+	}
+}
+
+@media (max-width: 435px) {
+	.text-minimalist__title {
+		font-size: 32px;
+	}
+	.minimalist__img {
+		margin-bottom: 35px;
+	}
+	.left-side__title, .right-side__title {
+		font-size: 20px;
+	}
+	.left-side__text, .right-side__text, .left-side__date {
+		font-size: 14px;
+	}
+	.description__wrapper {
+		row-gap: 30px;
+	}
+	.left-side__text {
+		margin-bottom: 25px;
+	}
+}
+@media (max-width: 435px) {
+	.text-minimalist__title {
+		font-size: 30px;
+	}
+	.achievement__header {
+		margin-bottom: 30px;
+	}
+	.achievement__items  {
+		gap: 30px;
+	}
+	.achievement__subtitle  {
+		font-size: 20px;
+	}
+	.achievement__text  {
+		font-size: 13px;
+	}
+}
+
+/* 
+Адаптивна верстка - це не про 
+впихування дизайну під ПК у маленьки екрани,
+це про зручність у користуванні та оптимізацію
+*/
+
+/* Хороші практики адаптивної верстки: */
+/* 
+- Дивіться на екран, та відповідайте на питання "Чи зручно цим користуватись?"
+- Для того щоб робити верстку швидко, продумовуйте адаптив ще на ПК
+- Не ховайте від користувача найважливіші елементи
+- Один клік завжди кращий за два
+- Не робіть великі відступи. Зайвий простір тут непотрібен
+- Важливі навігаційні вузли робіть зручнішими (крупнішими), не змушуйте користувача цілитись
+- Оптимізаця простору та завантаження. Ховайте зайве
+- Долучайте свій власний досвід користувача, не повторюйте те що не зручно вам самим
+*/
+
+/* ---------------------------- */
+
+/* якщо пристрій вміє робити наведення, додаємо hover */
+/* @media (any-hover: hover) {
+	a:hover {
+	}
+} */
