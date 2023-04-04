@@ -102,6 +102,8 @@ body {
 	transition: transform 0.8s;
 }
 
+
+
 .minimalist__img img:hover {
 	transform: scale(1.05);
 }
@@ -348,6 +350,9 @@ body {
 	.achievement {
 		padding-top: 25px;
 	}
+	.minimalist__img img {
+		animation: scale-animation 2s ease-in infinite;
+	}
 }
 @media (max-width: 675px) {
 	.text-minimalist__title {
@@ -474,6 +479,19 @@ font-size: 13px;
 	}
 	.achievement__text  {
 		font-size: 13px;
+	}
+}
+
+
+@keyframes scale-animation {
+	0% {
+		transform: scale(1);
+	}
+	50%  {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
 	}
 }
 
