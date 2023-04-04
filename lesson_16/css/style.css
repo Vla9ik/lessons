@@ -533,7 +533,7 @@ color: #000000;
 		flex-wrap: wrap;
 	}
 	.form-second__input, .form-second__inputs, .form-second__wrapper {
-		flex: 0 1 70%;
+		flex: 0 1 100%;
 	}
 	.form-second__label {
 		flex: 0 1 100%;
@@ -547,6 +547,7 @@ color: #000000;
 	.radio {
 		max-width: 100%;
 	}
+	
 }
 
 
