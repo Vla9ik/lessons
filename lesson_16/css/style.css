@@ -260,6 +260,7 @@ color: #000000;
 .form-shopping__item {
 	display: flex;
 	width: 100%;
+	flex-wrap: wrap;
 }
 
 .form-shopping__item:not(:last-child) {
@@ -482,4 +483,145 @@ color: #000000;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+
+@media (max-width: px) {
+
+}
+
+
+@media (max-width: 991.98px) {
+	.checkout {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	[class*="__body"] {
+		margin: 0 auto;
+		max-width: 606px;
+	}
+	.form-checkout__products {
+	margin-bottom: 35px;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.shipping-title {
+		text-align: center;
+	}
+	.form-shopping__item {
+		row-gap: 15px;
+	}
+	.form-shopping__label {
+		flex: 0 1 auto;
+	}
+	.form-shopping__input {
+		flex: 0 1 100%;
+	}
+	.form-shopping__message {
+		text-align: center;
+	}
+	.form-shopping__btn {
+		text-align: center;
+	}
+	.btn-shopping__submit {
+		margin: 0 auto 20px;
+		display: block;
+	}
+	.form-second__item {
+		row-gap: 5px;
+		flex-wrap: wrap;
+	}
+	.form-second__input, .form-second__inputs, .form-second__wrapper {
+		flex: 0 1 70%;
+	}
+	.form-second__label {
+		flex: 0 1 100%;
+	}
+	.form-second__box {
+		margin-bottom: 35px;
+	}
+	.form-second__radio-wrapper {
+		max-width: 100%;
+	}
+	.radio {
+		max-width: 100%;
+	}
+}
+
+
+@media (max-width: 659px) {
+	.checkout {
+		padding-top: 30px;
+	}
+	.form-checkout__title {
+		text-align: center;
+		font-size: 40px;
+	}
+	.form-checkout__products {
+		text-align: center;
+	}
+	.form-checkout__details {
+		text-align: center;
+	}
+	.form-checkout__box {
+	justify-content: center;
+	}
+	.form-checkout__line {
+		flex: 0 0 60%;
+	}
+	.form-checkout__textarea {
+		width: 80%;
+	}
+	.form-checkout__products {
+		margin-bottom: 25px;
+	}
+	.form-checkout__textarea {
+		margin: 0 auto 35px;
+	}
+	.form-checkout__checkbox {
+		max-width: 80%;
+		margin: 0 auto 25px;
+	}
+	.form-checkout__btn {
+		text-align: center;
+		margin: 0 auto;
+	}
+	.shopping__form {
+		margin-bottom: 25px;
+	}
+}
+@media (max-width: 527px) {
+	.form-second__list {
+		font-size: 13px;
+	}
+	.form-second__list::before {
+		top: 16px;
+	} 
+}
+
+
+
+@media (max-width: 479.98px) {
+	.form-checkout__box {
+		gap: 20px;
+	}
+	.form-checkout__line {
+	flex: 0 1 100%;
+	}
+	.form-checkout__textarea {
+		width: 100%;
+	}
+	.form-checkout__checkbox {
+		text-align: center;
+	}
+	.form-second__input, .form-second__inputs, .form-second__wrapper {
+		flex: 0 1 100%;
+	}
+	.form-second__title {
+		padding-bottom: 35px;
+	}
+	.form-checkout__details {
+		margin-bottom: 20px;
+	}
 }
