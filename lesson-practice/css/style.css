@@ -1,0 +1,188 @@
+/* ----------------- */
+/* --RESET STYLES--- */
+/* ----------------- */
+@import url("reset.css");
+@import url("common.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap");
+
+
+/* ====================== ШРИФТИ =============================== */
+
+/* Встановлює насиченість (товщину) шрифту
+font-weight: цифрове значення або значення словом (словесне);
+успадковується
+
+100 - thin 
+300 - light 
+400 - Regular (normal) (за замовчуванням)
+500 - medium 
+600 - semibold 
+700 - bold 
+900 - black */
+
+/*  body {
+	/* font-family: "Poppins", sans-serif;  Times New Roman  за замовченням */
+	/* font-size: 14px;  16 за замовченням */
+	/* font-weight: 300;  400 (Regular) за замовченням */
+	/* color: #6c757d;  #000000 (чорний) за замовченням 
+} */
+
+
+
+/* Пример */
+
+body {
+    font-family: "Poppins" ,serif; 
+    font-size: 14px;
+    font-weight: 300;
+	color: #E5E5E5;
+
+
+	background-color: #333;
+}
+
+[class*="__container"] {
+	max-width: 1270px; 
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+} 
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+
+/* ----------------------------- */
+
+.header {
+
+}
+.header__container {
+	display: flex;
+	min-height: 97px;
+	align-items: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	gap: 10px;
+}
+.header__logo {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.39;
+	color: #F8F9FA;
+	display: inline-flex;
+	align-items: flex-end;
+}
+
+.header__logo::after {
+	content: ".";
+	color: #DDBEA9;
+
+}
+.header__navigation {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	flex: 1 1 auto;
+	justify-content: flex-end;
+}
+
+
+.header__menu{
+	display: flex;
+	align-items: center;
+	gap: 25px;
+	flex: 1 1 auto;
+	justify-content: flex-end;
+}
+
+.header__menu:not(:last-child):after {
+	content: "";
+	height: 25px;
+	background-color: rgba(229, 229, 229, 0.5);
+	flex: 0 0 1px;
+} 
+
+.header__search {
+	flex: 0 0 22px;
+	align-self: stretch;
+	transform: translate(5px, 0);
+	background: url(../img/icons/search.svg) center  no-repeat;
+}
+
+.menu {
+}
+.menu__list {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 25px;
+	row-gap: 3px;
+}
+
+
+.menu__link {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 2.08;
+	color: rgba(248, 249, 250, 0.5);
+	transition: color 0.3s;
+	position: relative;
+	display: inline-block;
+}
+
+.menu__link::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 2px;
+	background-color: #DDBEA9;
+	border-radius: 2px;
+	transition: width 0.3s;
+}
+
+.menu__item:hover .menu__link::before, .menu__link.active::before  {
+	width: 100%;
+	left: 0;
+}
+
+.menu__item:hover .menu__link, .menu__link.active  {
+	color: #fff;
+}
+
+.menu__item_parent {
+	position: relative;
+	padding-right: 13px;
+}
+
+.menu__item_parent::after {
+	content: "";
+	position: absolute;
+	top: 9px;
+	right: 0;
+	background: url(../img/icons/arrow.svg) 0 0 / 100% no-repeat;
+	height: 5px;
+	width: 8px;
+}
+.menu__sub-menu {
+}
+.sub-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #212529;
+	border-radius: 5px;
+	padding: 20px;
+}
+.sub-menu__item {
+}
+.sub-menu__link {
+	color: #fff;
+}
