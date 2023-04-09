@@ -64,6 +64,7 @@ body {
 	left: 0;
 	width: 100%;
 	background-color: #fff;
+	z-index: 55;
 }
 .header__container {
 	display: flex;
@@ -73,7 +74,6 @@ body {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	column-gap: 10px;
-	row
 }
 .header__logo {
 	display: inline-flex;
@@ -324,9 +324,10 @@ body {
 .item-topic {
 }
 .item-topic__image {
+	display: inline-block;
 	flex: 0 1 47.438017%; /* 287/605 */
 	position: relative;
-	padding-bottom: 69.686411%; /* 200/287 */ 
+	padding-top: 69.686411%; /* 200/287 */ 
 }
 .item-topic__image img {
 	position: absolute;
