@@ -63,7 +63,7 @@ body {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: #fff;
+	background-color: #d38c8c;
 	z-index: 55;
 }
 .header__container {
@@ -164,9 +164,7 @@ body {
 	transition: background-color 0.3s;
 }
 
-.actions__start:hover {
-	background-color: #bb8a6a;
-}
+
 
 .menu-icon {
 	display: none;
@@ -193,9 +191,7 @@ body {
 	overflow: hidden;
 	border-radius: 5px;
 }
-.slider-header__background:hover img {
-	transform: scale(1.05);
-}
+
 
 .slider-header__background img {
 	position: absolute;
@@ -236,51 +232,7 @@ body {
 	display: flex;
 	align-items: flex-start;
 }
-.topics__left-side {
-	flex: 0 1 38.910506%; /* 400/1028 */
-	display: flex;
-	flex-direction: column;
-	row-gap: 30px;
-}
 
-
-.left-side__title {
-	font-weight: 700;
-	font-size: 25px;
-	line-height: 1.6;
-	color: #212529;
-}
-
-.menu-side__item:not(:last-child) {
-	margin-bottom: 10px;
-}
-.menu-side__link {
-	font-weight: 500;
-	font-size: 12px;
-	line-height: 2.08;
-	color: #495057;
-	padding-left: 20px;
-	display: inline-block;
-	position: relative;
-}
-
-
-
-.menu-side__link::before {
-	content: "+";
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-.left-side__search {
-	font-weight: 500;
-	font-size: 12px;
-	line-height: 2.08;
-	color: rgba(73, 80, 87, 0.5);
-	display: inline-block;
-	padding-left: 22px;
-	background: url(../img/icons/search.svg) left center no-repeat;
-}
 
 .topics__content {
 	flex: 0 1 61.089494%; 
@@ -310,9 +262,7 @@ body {
 	overflow: hidden; 
 	border-radius: 5px;
 }
-.item-topic__inner:hover .item-topic__image img {
-	transform: scale(1.05);
-}
+
 
 .item-topic__image img {
 	position: absolute;
@@ -451,6 +401,10 @@ body {
 	column-gap: 25px;
 }
 
+.topics__left-side {
+	display: none;
+}
+
 
 /* ------------------- */
 
@@ -484,6 +438,10 @@ body {
 }
 
 @media (max-width: 767.98px) {
+	.page {
+		padding-top: 90px;
+		padding-bottom: 70px;
+	}
 	.header__container {
 		min-height: 50px;
 	}
@@ -561,6 +519,85 @@ body {
 		width: 0;
 		left: 50%;
 	}
+	.topics__items {
+		align-items: center;
+	}
+	.page-topics__list {
+		justify-content: center;
+		column-gap: 40px;
+	}
+	.slider-header__title {
+		font-size: 21px;
+	}
+	.footer {
+		padding-top: 70px;
+		padding-bottom: 60px;
+	}
+}
+@media (max-width: 605px) {
+
+}
+
+@media (max-width: 574px) {
+	.footer__list {
+		display: none;
+	}
+	.footer {
+		padding-top: 50px;
+	}
+	.page {
+		padding-bottom: 48px;
+	}
+	.item-topic__title {
+		font-size: 14px;
+	}
+	.slider-header__background {
+		padding-top: 50px;
+	}
+}
+
+@media (max-width: 465px) {
+	.slider-header__title {
+		font-size: 19px;
+	}
+	.topics__content {
+		padding-left: 0;
+	}
+	.topics__item {
+		flex-direction: column;
+		row-gap: 22px;
+	}
+	.item-topic__inner {
+		flex: 0 1 auto;
+		width: 100%;
+	}
+	.item-topic__body {
+		padding-left: 0;
+	}
+}
+
+@media (max-width: 465px) {
+	.footer {
+		padding-bottom: 30px;
+		padding-top: 30px;
+	}
+	.slider-header__title {
+		font-size: 16px;
+	}
+	.footer__line_mod {
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+	}
+}
+
+@media (max-width: 336px) {
+	.header__actions {
+		column-gap: 12px;
+	} 
+	.actions__start {
+		padding: 6px 12px;
+	}
 }
 
 
@@ -603,5 +640,80 @@ body {
 	.languages-list__item:hover .languages-list__link {
 		text-decoration: underline;
 	}
+	.item-topic__inner:hover .item-topic__image img {
+		transform: scale(1.05);
+	}
+	.actions__start:hover {
+		background-color: #bb8a6a;
+	}
+	.slider-header__background:hover img {
+		transform: scale(1.05);
+	}
 }
 
+/* Adaptive */
+
+@media (min-width: 921px) {
+	.topics__left-side {
+		flex: 0 1 38.910506%; /* 400/1028 */
+		display: flex;
+		flex-direction: column;
+		row-gap: 30px;
+	}
+	
+	
+	.left-side__title {
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 1.6;
+		color: #212529;
+	}
+	
+	.menu-side__item:not(:last-child) {
+		margin-bottom: 10px;
+	}
+	.menu-side__link {
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 2.08;
+		color: #495057;
+		padding-left: 20px;
+		display: inline-block;
+		position: relative;
+	}
+	
+	
+	
+	.menu-side__link::before {
+		content: "+";
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.left-side__search {
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 2.08;
+		color: rgba(73, 80, 87, 0.5);
+		display: inline-block;
+		padding-left: 22px;
+		background: url(../img/icons/search.svg) left center no-repeat;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.page__topics {
+	padding-top: 70px;
+	}
+}
+
+@media (max-width: 921px) {
+	.page__topics {
+		padding-top: 50px;
+		}
+	.topics__content {
+		flex: 0 1 100%;
+	}
+}
+
+/*  */
