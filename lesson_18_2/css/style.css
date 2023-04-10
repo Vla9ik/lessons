@@ -1,0 +1,290 @@
+/* ----------------- */
+/* --RESET STYLES--- */
+/* ----------------- */
+@import url("reset.css");
+@import url("common.css");
+
+
+/* ====================== ШРИФТИ =============================== */
+
+/* Встановлює насиченість (товщину) шрифту
+font-weight: цифрове значення або значення словом (словесне);
+успадковується
+
+100 - thin 
+300 - light 
+400 - Regular (normal) (за замовчуванням)
+500 - medium 
+600 - semibold 
+700 - bold 
+900 - black */
+
+/*  body {
+	/* font-family: "Poppins", sans-serif;  Times New Roman  за замовченням */
+	/* font-size: 14px;  16 за замовченням */
+	/* font-weight: 300;  400 (Regular) за замовченням */
+	/* color: #6c757d;  #000000 (чорний) за замовченням 
+} */
+
+
+
+/* Пример */
+
+body {
+    font-family: "Poppins" ,serif; 
+    font-size: 16px;
+    font-weight: 500;
+    color: #212529;
+	background-color: #92d285be;
+}
+
+[class*="__container"] {
+	max-width: 1270px; 
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+} 
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+	z-index: 55;
+}
+.header__container {
+	position: relative;
+	min-height: 74px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__logo {
+	z-index: 1;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.38; /* 25/18 */
+	color: #495057;
+	display: inline-flex;
+	align-items: flex-end;
+}
+
+.header__logo::after {
+	content: ".";
+	color: #DDBEA9;
+}
+.header__navigation {
+}
+.menu {
+}
+.menu__list {
+	display: flex;
+	column-gap: 25px;
+	row-gap: 10px;
+	flex-wrap: wrap;
+}
+.menu__item {
+}
+.menu__link {
+	font-size: 12px;
+	line-height: 2.08; /* 25/12 */
+	color: rgba(73, 80, 87, 0.5);
+	transition: color 0.3s;
+	display: inline-block;
+	position: relative;
+}
+
+
+
+.menu__link::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 2px;
+	width: 0;
+	background-color:  #DDBEA9;
+	transition: width 0.3s;
+	border-radius: 3px;
+}
+
+
+.header__languages {
+	z-index: 1;
+	display: flex;
+	column-gap: 20px;
+	align-items: center;
+	min-height: 25px;
+}
+.languages {
+}
+
+
+
+
+
+
+.langugages__serach {
+	display: inline-block;
+	flex: 0 0 12px;
+	align-self: stretch;
+	background: url(../img/icons/search.svg) right center no-repeat;
+}
+.menu-icon {
+	display: none;
+}
+/* ------------------ */
+
+
+/* ----------------- */
+
+@media (any-hover: hover) {
+	.menu__item:hover .menu__link::before {
+		width: 100%;
+		left: 0;
+	}
+	.menu__item:hover .menu__link {
+		color: #495057;
+	}
+	.languages__item:hover .languages__link  {
+		color: #212529;
+		text-decoration: underline;
+	}
+}
+@media (min-width: 768px) {
+	.languages__wrapper{
+		display: flex;
+		column-gap: 20px;
+	}
+	.languages__wrapper::after {
+		content: "";
+		height: 25px;
+		width: 2px;
+		background-color: #E5E5E5;
+	}
+	.languages__link {
+		font-size: 12px;
+		line-height: 2.08; /* 25/12 */
+		color: rgba(73, 80, 87, 0.5);
+		transition: color 0.3s;
+	}
+	.languages__list {
+		display: flex;
+		column-gap: 25px;
+	}
+	
+} 
+
+
+@media (max-width: 767.98px) {
+	.header__container {
+		min-height: 50px;
+	}
+	.header__navigation {
+		position: fixed;
+		top: 0;
+		left: -100%;
+		padding: 70px 15px 20px 15px;
+		width: 100%;
+		height: 100%;
+		transition: left 0.3s;
+		background-color: #64c153;
+		overflow: auto;
+	}
+	.header__navigation::before {
+		content: "";
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: -100%;
+		height: 50px;
+		width: 100%;
+		background-color: #9a8686;
+		transition: left 0.3s;
+	}
+	.menu-open .header__navigation, .menu-open .header__navigation::before {
+		left: 0;
+	}
+	.menu__list {
+		flex-direction: column;
+	}
+	.menu__link.active {
+		color: #fff;
+	}
+	.menu__link.active::before {
+		width: 100%;
+		left: 0;
+	}
+	.menu__link {
+		font-size: 20px;
+	}
+	.menu__list {
+		row-gap: 20px;
+	}
+	.header__languages {
+		justify-content: flex-end;
+	}
+	.languages__wrapper {
+		display: none;
+	}
+	.langugages__serach {
+		flex-basis: 22px;
+		background-size: 100%;
+	}
+	.menu-icon {
+		display: block;
+		width: 30px;
+		height: 18px;
+		flex: 0 0 30px;
+		position: relative;
+
+	}
+	.menu-icon span, .menu-icon::before, .menu-icon::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 1px;
+		background-color: #fff;
+		transition: all 0.3s;
+	}
+	.menu-icon span {
+		top: 50%;
+	}
+	.menu-icon::before {
+		top: 0;
+	} 
+	.menu-icon::after {
+		bottom: 0;
+	}
+	.menu-open .menu-icon span {
+		width: 0;
+		left: 50%;
+	}
+	.menu-open .menu-icon::before {
+		top: 50%;
+		transform: translateY(-50%) rotate(-45deg);
+	}
+	.menu-open .menu-icon::after {
+		top: 50%;
+		transform: translateY(-50%) rotate(45deg);
+	}
+}
+
+/* ------------------------ */
