@@ -79,14 +79,12 @@ body {
 
 .grid-card__item:nth-child(1) {
 	grid-row: span 2;
-	padding-top: 85.964912%; /* 490/570 */
+	padding-bottom: 85.964912%; /* 490/570 */
 }
 
 .grid-card__item {
 	position: relative;
-	padding-top: 40.350877%; /* 230/570 */
-	display: flex;
-	align-items: center;
+	padding-bottom: 40.350877%; /* 230/570 */
 }
 
 .grid-card__item img {
