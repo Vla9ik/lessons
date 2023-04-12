@@ -171,6 +171,7 @@ body {
 	grid-auto-flow: row;
 	grid-auto-rows: 1fr;
 	grid-auto-columns: 1fr;
+	margin-bottom: 40px;
 }
 .cards-product {
 }
@@ -241,6 +242,11 @@ body {
 }
 .reviews__comments {
 }
+
+.reviews__comments:hover {
+	text-decoration: underline;
+}
+
 .reviews__price {
 	padding: 15px 20px;
 	font-weight: 600;
@@ -249,7 +255,30 @@ body {
 	border-left: 1px solid #E7E7E7;
 }
 
-
+.latest-products__slider {
+	margin: 0 auto;
+	text-align: center;
+}
+.slider__wrapper {
+	padding: 6px;
+	display: inline-flex;
+	background-color: #fff;
+	border: 0.5px solid #E7E7E7;
+	border-radius: 23px;
+	column-gap: 12px;
+	align-items: center;
+}
+.slider__item {
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	border: 1px solid #E7E7E7;
+	background: url(../img/icons/arrow.svg) center  no-repeat;
+}
+.slider__item:nth-child(2) {
+	transform: rotate(180deg);
+}
 
 
 /* ---------------------------- */
@@ -304,14 +333,18 @@ body {
 	transition: color 0.3s;
 }
 
+
+
 .form-rating__input:checked, .form-rating__input:checked ~ .form-rating__label {
 	color: #ffd300;
 }
-.form-rating__label:checked:hover, 
+
+.form-rating__input:checked ~ .form-rating__label:hover, 
 .form-rating__label:hover, 
 .form-rating__label:hover ~ .form-rating__label,  
 .form-rating__label:checked ~ .form-rating__label:hover {
 	color: #baab60;
 }
+
 
 /* ---------------------------- */
