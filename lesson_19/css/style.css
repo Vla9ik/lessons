@@ -75,16 +75,16 @@ body {
 .grid-card {
 	display: grid;
 	grid-template: repeat(auto-fit, minmax(230px, 1fr)) / repeat(auto-fit, minmax(570px, 1fr));
+	gap: 30px;
 }
 
 .grid-card__item:nth-child(1) {
 	grid-row: span 2;
-	padding-bottom: 85.964912%; /* 490/570 */
 }
+
 
 .grid-card__item {
 	position: relative;
-	padding-bottom: 40.350877%; /* 230/570 */
 }
 
 .grid-card__item img {
@@ -97,14 +97,30 @@ body {
 }
 
 .grid-card__text {
+	padding: 40px 168px 84px 40px;
+}
+
+.grid-card__text {
 	position: relative;
 	z-index: 1;
+	
 }
 .text-card {
 }
 .text-card__category {
+	font-weight: 600;
+	line-height: 1.50; /* 24/16 */
 }
+
+.text-card__category:not(:last-child) {
+	margin-bottom: 12px;
+}
+
 .text-card__about {
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 1.25; /* 35/28 */
+	color: #212B36;
 }
 
 /* ---------------------------- */
