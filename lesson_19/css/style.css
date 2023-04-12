@@ -1,0 +1,113 @@
+/* ----------------- */
+/* --RESET STYLES--- */
+/* ----------------- */
+@import url("reset.css");
+@import url("common.css");
+
+
+/* ====================== ШРИФТИ =============================== */
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,700&display=swap");
+
+/* Встановлює насиченість (товщину) шрифту
+font-weight: цифрове значення або значення словом (словесне);
+успадковується
+
+100 - thin 
+300 - light 
+400 - Regular (normal) (за замовчуванням)
+500 - medium 
+600 - semibold 
+700 - bold 
+900 - black */
+
+/*  body {
+	/* font-family: "Poppins", sans-serif;  Times New Roman  за замовченням */
+	/* font-size: 14px;  16 за замовченням */
+	/* font-weight: 300;  400 (Regular) за замовченням */
+	/* color: #6c757d;  #000000 (чорний) за замовченням 
+} */
+
+
+
+/* Пример */
+
+body {
+    font-family: "Inter", serif; 
+    font-size: 16px;
+    font-weight: 500;
+    color: #637381;
+}
+
+[class*="__container"] {
+	max-width: 1200px; 
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+
+
+/* -------------------------- */
+
+.page {
+	padding-top: 80px;
+	padding-bottom: 120px;
+}
+.page__header-cards {
+	margin-bottom: 80px;
+}
+
+/* ---------------------------- */
+.header-cards__container {
+}
+.header-cards__grid {
+}
+.grid-card {
+	display: grid;
+	grid-template: repeat(auto-fit, minmax(230px, 1fr)) / repeat(auto-fit, minmax(570px, 1fr));
+}
+
+.grid-card__item:nth-child(1) {
+	grid-row: span 2;
+	padding-top: 85.964912%; /* 490/570 */
+}
+
+.grid-card__item {
+	position: relative;
+	padding-top: 40.350877%; /* 230/570 */
+	display: flex;
+	align-items: center;
+}
+
+.grid-card__item img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.grid-card__text {
+	position: relative;
+	z-index: 1;
+}
+.text-card {
+}
+.text-card__category {
+}
+.text-card__about {
+}
+
+/* ---------------------------- */
+
