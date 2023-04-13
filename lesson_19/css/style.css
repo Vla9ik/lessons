@@ -268,17 +268,29 @@ body {
 	column-gap: 12px;
 	align-items: center;
 }
+.slider__item:hover svg path {
+	transition: fill 0.3s;
+}
+
+.slider__item:hover svg path {
+	fill: white;
+}
+.slider__item:hover {
+	background-color: #3056D3;
+}
+
 .slider__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	border-radius: 50%;
 	width: 30px;
 	height: 30px;
 	background-color: #fff;
 	border: 1px solid #E7E7E7;
-	background: url(../img/icons/arrow.svg) center  no-repeat;
+	transition: background-color 0.3s;
 }
-.slider__item:nth-child(2) {
-	transform: rotate(180deg);
-}
+
 
 
 /* ---------------------------- */
@@ -344,6 +356,97 @@ body {
 .form-rating__label:hover ~ .form-rating__label,  
 .form-rating__label:checked ~ .form-rating__label:hover {
 	color: #baab60;
+}
+
+
+/* ---------------------------- */
+
+.page__trend {
+	padding-top: 120px;
+}
+.trend {
+}
+.trend__container {
+}
+.trend__header {
+	margin: 0 auto;
+	max-width: 490px;
+	text-align: center;
+	margin-bottom: 70px;
+}
+.header-trend {
+}
+.header-trend__title:not(:last-child) {
+	margin-bottom: 15px;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 1.13; /* 45/40 */
+	text-transform: capitalize;
+	color: #212B36;
+}
+.header-trend__text {
+}
+.trend__cards {
+	display: grid;
+	grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+	grid-auto-flow: row;
+	grid-auto-rows: 1fr;
+	grid-auto-columns: 1fr;
+	border: 1px solid #E7E7E7;
+	border-radius: 10px;
+}
+.cards-trend {
+}
+.cards-trend__item {
+	border-right: 1px solid #E7E7E7;
+	border-bottom: 1px solid #E7E7E7;
+	padding: 25px;
+}
+.item-trend {
+}
+.item-trend__image {
+	position: relative;
+	margin-bottom: 24px;
+	padding-top: 76.470588%; /* 260/340 */
+	overflow: hidden;
+	border-radius: 6px;
+}
+
+.item-trend__image img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.item-trend__body {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	row-gap: 10px;
+}
+.item-trend__price {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.30; /* 26/20 */
+	color: #212B36;
+}
+.item-trend__title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.25; /* 30/24 */
+	color: #212B36;
+}
+.item-trend__reviews {
+	display: flex;
+	column-gap: 10px;
+	align-items: center;
+}
+.item-trend__link {
+	line-height: 1.50; /* 24/16 */
 }
 
 
