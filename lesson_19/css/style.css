@@ -388,6 +388,7 @@ body {
 .header-trend__text {
 }
 .trend__cards {
+	overflow: hidden;
 	display: grid;
 	grid-template: repeat(2, 1fr) / repeat(3, 1fr);
 	grid-auto-flow: row;
@@ -399,6 +400,8 @@ body {
 .cards-trend {
 }
 .cards-trend__item {
+	margin-bottom: -1px;
+	margin-right: -1px;
 	border-right: 1px solid #E7E7E7;
 	border-bottom: 1px solid #E7E7E7;
 	padding: 25px;
