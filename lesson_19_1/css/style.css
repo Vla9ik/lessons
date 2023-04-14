@@ -144,10 +144,44 @@ body {
 }
 
 @media (max-width: 991.98px) {
-	
+	.page {
+		padding-top: 50px;
+	}
+	.page__header-cards {
+		margin-bottom: 45px;
+	}
+	.grid-card {
+		grid-template-columns: 1fr;
+	}
+	.grid-card__item:nth-child(1) {
+		grid-row: auto;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.page {
+		padding-top: 30px;
+	}
 }
 
 
+@media (max-width: 521px) {
+	.grid-card {
+		gap: 15px;
+	}
+	.grid-card__text {
+		padding: 30px 100px 55px 40px;
+	}
+}
+
+@media (max-width: 479.98px) {
+	.grid-card__text {
+		padding: 30px 120px 38px 19px;
+	}
+	.grid-card__item:nth-child(2) img {
+		object-position: right;
+	}
+} 
 
 /* ---------------------------- */
 
@@ -258,6 +292,7 @@ body {
 	display: flex;
 	column-gap: 7px;
 	padding: 15px 48px 15px 15px;
+	align-items: center;
 }
 
 
@@ -274,41 +309,63 @@ body {
 }
 
 .latest-products__slider {
-	margin: 0 auto;
-	text-align: center;
-}
-.slider__wrapper {
-	padding: 6px;
-	display: inline-flex;
-	background-color: #fff;
-	border: 0.5px solid #E7E7E7;
-	border-radius: 23px;
-	column-gap: 12px;
-	align-items: center;
-}
-.slider__item:hover svg path {
-	transition: fill 0.3s;
+	display: none;
 }
 
-.slider__item:hover svg path {
-	fill: white;
-}
-.slider__item:hover {
-	background-color: #3056D3;
-}
 
-.slider__item {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 50%;
-	width: 30px;
-	height: 30px;
-	background-color: #fff;
-	border: 1px solid #E7E7E7;
-	transition: background-color 0.3s;
-}
 
+@media (max-width: 991.92px) {
+	.page__latest-products {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	.latest-products__cards {
+		grid-template-columns: repeat(2, 1fr)
+	}
+	.reviews__wrapper {
+		column-gap: 20px;
+	}
+	.latest-products__header {
+		margin-bottom: 40px;
+	}
+} 
+@media (min-width: 768px) {
+	.latest-products__slider {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.slider__wrapper {
+		padding: 6px;
+		display: inline-flex;
+		background-color: #fff;
+		border: 0.5px solid #E7E7E7;
+		border-radius: 23px;
+		column-gap: 12px;
+		align-items: center;
+	}
+	.slider__item:hover svg path {
+		transition: fill 0.3s;
+	}
+	
+	.slider__item:hover svg path {
+		fill: white;
+	}
+	.slider__item:hover {
+		background-color: #3056D3;
+	}
+	.slider__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		width: 30px;
+		height: 30px;
+		background-color: #fff;
+		border: 1px solid #E7E7E7;
+		transition: background-color 0.3s;
+	}
+}
 
 
 /* ---------------------------- */
