@@ -224,8 +224,10 @@ body {
 	grid-auto-flow: row;
 	grid-auto-rows: 1fr;
 	grid-auto-columns: 1fr;
-	margin-bottom: 40px;
 }
+
+
+
 .cards-product {
 }
 .cards-product__item {
@@ -257,7 +259,7 @@ body {
 }
 
 .item-product__title {
-	display: inline-block;
+	display: block;
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 1.30; /* 26/20 */
@@ -329,7 +331,38 @@ body {
 		margin-bottom: 40px;
 	}
 } 
+
+@media (max-width: 767.98px) {
+	.latest-products__cards {
+		grid-template-columns: 1fr;
+		justify-items: center;
+	}
+	.item-product__title {
+		text-align: center;
+		font-size: 25px;
+	}
+	.item-product__text p {
+		text-align: center;
+	}
+}
+
+@media (max-width: 420px) {
+	.header-products__title {
+		font-size: 35px;
+	}
+	.reviews__wrapper {
+		padding: 0 10px 0 10px;
+	}
+	.item-product__title {
+		font-size: 21px;
+	}
+
+}
+
 @media (min-width: 768px) {
+	.latest-products__cards {
+		margin-bottom: 40px;
+	}
 	.latest-products__slider {
 		display: block;
 		margin: 0 auto;
@@ -436,10 +469,7 @@ body {
 .page__trend {
 	padding-top: 120px;
 }
-.trend {
-}
-.trend__container {
-}
+
 .trend__header {
 	margin: 0 auto;
 	max-width: 490px;
@@ -448,17 +478,16 @@ body {
 }
 .header-trend {
 }
-.header-trend__title:not(:last-child) {
-	margin-bottom: 15px;
+.header-trend__title {
 	font-style: normal;
 	font-weight: 700;
 	font-size: 40px;
 	line-height: 1.13; /* 45/40 */
 	text-transform: capitalize;
+	margin-bottom: 15px;
 	color: #212B36;
 }
-.header-trend__text {
-}
+
 .trend__cards {
 	overflow: hidden;
 	display: grid;
@@ -542,6 +571,38 @@ body {
 	text-decoration: underline;
 }
 
+@media (max-width: 991.98px) {
+	.page__trend {
+		padding-top: 60px;
+	}
+	.trend__header {
+		margin-bottom: 40px;
+	}
+	.trend__cards {
+		grid-template: 1fr / repeat(2, 1fr);
+	}
+	.item-trend__reviews {
+		align-self: stretch;
+		justify-content: space-between;
+	}
+}
+@media (max-width: 767.98px) {
+	.item-trend__title {
+		font-size: 22px;
+	}
+	.trend__cards {
+		grid-template-columns: 1fr;
+	}
+	.item-trend__body {
+		row-gap: 20px;
+	}
+}
+
+@media (max-width: 395px) {
+	.header-trend__title {
+		font-size: 30px;
+	}
+} 
 
 /* ---------------------------- */
 
