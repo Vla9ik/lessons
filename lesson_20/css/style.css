@@ -783,8 +783,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .explore-product__image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 55.555556%;
+          flex: 0 1 55.555556%; /* 1060/1908 */
   position: relative;
   overflow: hidden;
   padding-top: 34.245283%; /* 363/1060 */

@@ -694,9 +694,11 @@ body {
 	// .explore-product__container
 	&__container {
 		display: flex;
+		align-items: flex-start;
 	}
 	// .explore-product__image
 	&__image {
+		flex: 0 1 55.555556%; /* 1060/1908 */
 		position: relative;
 		overflow: hidden;
 		padding-top: 34.245283%; /* 363/1060 */
