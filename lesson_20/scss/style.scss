@@ -63,6 +63,7 @@ body {
 		padding-top: 120px;
 		margin-bottom: 30px;
 	}
+	padding-bottom: 60px;
 }
 .brand {
 	// .brand__items
@@ -303,8 +304,8 @@ body {
 		height: 0;
 		opacity: 0;
 		&:checked + .form-filter__label::before {
+			background: url(../img/icons/arrow.svg) center / 100% no-repeat;
 			background-color: #000;
-			background: url(../img/icons/arrow.svg) center  no-repeat;
 		}
 	}
 	// .form-filter__label

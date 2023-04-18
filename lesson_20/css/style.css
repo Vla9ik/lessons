@@ -112,6 +112,9 @@ body {
 }
 
 /* ------------------ */
+.page {
+  padding-bottom: 60px;
+}
 .page__brand {
   padding-top: 120px;
   margin-bottom: 30px;
@@ -365,8 +368,8 @@ body {
   opacity: 0;
 }
 .form-filter__input:checked + .form-filter__label::before {
+  background: url(../img/icons/arrow.svg) center/100% no-repeat;
   background-color: #000;
-  background: url(../img/icons/arrow.svg) center no-repeat;
 }
 .form-filter__label {
   cursor: pointer;
