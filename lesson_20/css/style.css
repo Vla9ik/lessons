@@ -930,6 +930,7 @@ body {
   line-height: 1.5; /* 18/12 */
   text-transform: uppercase;
   color: #BDBDBD;
+  margin-bottom: 11px;
 }
 @media (any-hover: hover) {
   .item-product__category:hover {
