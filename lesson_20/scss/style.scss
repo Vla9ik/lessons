@@ -113,8 +113,10 @@ body {
 				background-color: #F0F2F2;
 			}
 		}
-		&:hover {
-			background-color: #F0F2F2;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #F0F2F2;
+			}
 		}
 	}
 	// .brand__link
@@ -243,9 +245,11 @@ body {
 		text-transform: uppercase;
 		border: 2px solid #000000;
 		transition: background-color 0.3s, color 0.3s;
-		&:hover {
-			background-color: #000;
-			color: #fff;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #000;
+				color: #fff;
+			}	
 		}
 		@media (max-width: 767.98px) {
 			padding: 15px 30px;
@@ -336,9 +340,11 @@ body {
 		border: 2px solid #C4C4C4;
 		padding: 18px 36px;
 		transition: border 0.3s, color 0.3s;
-		&:hover {
-			border: 2px solid #000;
-			color: #000;
+		@media (any-hover: hover) {
+			&:hover {
+				border: 2px solid #000;
+				color: #000;
+			}
 		}
 		@media (max-width: 500px) {
 			padding: 15px 30px;
@@ -420,8 +426,14 @@ body {
 			height: 100%;
 			width: 100%;
 			object-fit: cover;
+			transition: transform 0.5s;
 		}
 		margin-bottom: 15px;
+		@media (any-hover: hover) {
+			&:hover img {
+				transform: scale(1.1);
+			}
+		}
 	}
 	&__title {
 		margin-bottom: 10px;
@@ -434,6 +446,11 @@ body {
 		line-height: 1.50; /* 18/12 */
 		text-transform: uppercase;
 		color: #BDBDBD;
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 	// .card-dress__text
 	&__text {
@@ -611,9 +628,11 @@ body {
 		color: #000000;
 		border: 2px solid #000000;
 		transition: background-color 0.3s, color 0.3s;
-		&:hover {
-			background-color: #000;
-			color: #FFFFFF;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #000;
+				color: #FFFFFF;
+			}
 		}
 		@media (max-width: 991.98px) {
 			padding: 18px 42px;
@@ -712,9 +731,12 @@ body {
 		height: 40px;
 		border: 2px solid #C4C4C4;
 		transition: background-color 0.3s;
-		&:hover {
-			background-color: #C4C4C4;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #C4C4C4;
+			}
 		}
+		
 	}
 }
 .item-product {
@@ -734,8 +756,14 @@ body {
 			height: 100%;
 			position: absolute;
 			object-fit: cover;
+			transition: transform 0.5s;
 		}
 		margin-bottom: 15px;
+		@media (any-hover: hover) {
+			&:hover img {
+				transform: scale(1.1);
+			}
+		}
 	}
 	&__subtitle {
 		margin-bottom: 12px;
@@ -748,6 +776,11 @@ body {
 		line-height: 1.50; /* 18/12 */
 		text-transform: uppercase;
 		color: #BDBDBD;
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 	// .item-product__descr
 	&__descr {
@@ -901,8 +934,15 @@ body {
 		display: inline-block;
 		padding: 20px 48px;
 		border: 2px solid #000000;
+		transition: background-color 0.3s, color 0.3s;
 		@media (max-width: 611px) {
 			padding: 16px 40px;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #000;
+				color: #fff;
+			}
 		}
 	}
 }
@@ -971,6 +1011,11 @@ body {
 		margin-bottom: 21px;
 		@media (max-width: 767.98px) {
 			margin-bottom: 12px;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 	// .item-blog__title
