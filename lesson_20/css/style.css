@@ -514,9 +514,6 @@ body {
   border: 1px solid #828282;
 }
 
-.card-dress__item {
-  display: block;
-}
 .card-dress__image {
   position: relative;
   overflow: hidden;
