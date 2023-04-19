@@ -526,6 +526,9 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.card-dress__title {
+  margin-bottom: 10px;
+}
 .card-dress__category {
   display: inline-block;
   font-weight: 600;
@@ -533,7 +536,6 @@ body {
   line-height: 1.5; /* 18/12 */
   text-transform: uppercase;
   color: #BDBDBD;
-  margin-bottom: 10px;
 }
 .card-dress__text {
   line-height: 1.5; /* 27/18 */
@@ -882,6 +884,9 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.item-product__subtitle {
+  margin-bottom: 12px;
+}
 .item-product__category {
   display: inline-block;
   font-weight: 600;
@@ -889,7 +894,6 @@ body {
   line-height: 1.5; /* 18/12 */
   text-transform: uppercase;
   color: #BDBDBD;
-  margin-bottom: 12px;
 }
 .item-product__descr {
   line-height: 1.5; /* 27/18 */
