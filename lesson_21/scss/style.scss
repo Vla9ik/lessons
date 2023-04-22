@@ -1,0 +1,259 @@
+
+@use "sass:math";
+@import "_mixins.scss";
+@import "_reset.scss";
+@import "_common.scss";
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap");
+
+/* ====================== ШРИФТИ =============================== */
+
+/* Встановлює насиченість (товщину) шрифту
+font-weight: цифрове значення або значення словом (словесне);
+успадковується
+
+100 - thin 
+300 - light 
+400 - Regular (normal) (за замовчуванням)
+500 - medium 
+600 - semibold 
+700 - bold 
+900 - black */
+
+body {
+    font-family: "Poppins", serif; 
+    font-size: rem(12);
+    font-weight: 300;
+    color: #E5E5E5;
+	background-color: #333;
+}
+
+[class*="__container"] {
+	max-width: rem(1270); 
+	margin: 0 auto;
+	padding-left: rem(15);
+	padding-right: rem(15);
+} 
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+/* ------------------ */
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 50;
+	background-color: rgba(0, 0, 0, 0.2);
+	// .header__container
+	&__container {
+		display: flex;
+		align-items: center;
+		min-height: rem(97);
+		padding-top: rem(5);
+		padding-bottom: rem(5);
+		gap: rem(10);
+		@media (max-width: em(767.98)){
+			min-height: rem(50);
+		}
+	}
+	// .header__logo
+	&__logo {
+		font-weight: 700;
+		font-size: rem(18);
+		line-height: 1.38; /* 25/18 */
+		display: inline-flex;
+		align-items: flex-end;
+		position: relative;
+		z-index: 1;
+		&::after{
+			content:'.';
+			color: #DDBEA9;
+		}
+	}
+	// .header__navigation
+	&__navigation {
+		flex: 1 1 auto;
+		justify-content: flex-end;
+		display: flex;
+		align-items: center;
+		gap: rem(20);
+	}
+	// .header__menu
+	&__menu {
+		display: flex;
+		align-items: center;
+		gap: rem(25);
+		flex-direction: 1 1 auto;
+		justify-content: flex-end;
+		&:not(:last-child) {
+			&::after{
+				content:'';
+				background-color: rgba(229, 229, 229, 0.5);
+				width: rem(1);
+				flex: 0 0 rem(1);
+				height: rem(25);
+			}
+		}
+	}
+	// .header__search
+	&__search {
+		background: url('../img/icons/search.svg') center no-repeat;
+		align-self: stretch;
+		flex: 0 0 rem(22);
+		transform: translate(rem(5), rem(0));
+	}
+}
+.menu {
+	&__body {
+		@media (max-width: em(660)){
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: #212529;
+			padding: rem(70), rem(15), rem(20), rem(15);
+		}
+	}
+	// .menu__list
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: rem(25);
+		row-gap: rem(5);
+	}
+	// .menu__item
+	&__item {
+		@media (any-hover: hover){
+			&:hover .menu__link, .menu__link.active {
+				color: #fff;
+			}
+			&:hover .menu__link::before, .menu__link.active::before {
+				width: 100%;
+				left: 0;
+			}
+		}
+		&_parent {
+			position: relative;
+			padding-right: rem(13);
+			&:hover .sub-menu{
+				top: 100%;
+				opacity: 1;
+				visibility: visible;
+				pointer-events: auto;
+			}
+		}
+		// .menu__item_parent
+		&_parent {
+			&::after{
+				content:'';
+				position: absolute;
+				top: rem(10);
+				right: 0;
+				width: rem(8);
+				height: rem(5);
+				background: url('../img/icons/arrow.svg') 0 0 / 100% no-repeat;
+			}
+		}
+	}
+	// .menu__link
+	&__link {
+		font-weight: 500;
+		line-height: 2.08; /* 25/12 */
+		color: rgba(248, 249, 250, 0.5);
+		transition: color 0.3s;
+		display: inline-block;
+		position: relative;
+		&::before {
+			content:'';
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 0;
+			height: rem(2);
+			background-color: #DDBEA9;
+			border-radius: rem(2);
+			transition: width 0.3s;
+		}
+	}
+	// .menu__sub-menu
+	&__sub-menu {}
+}
+.sub-menu {
+	position: absolute;
+	top: 120%;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.5s;
+	padding-top: rem(10);
+	pointer-events: none;
+	&__list {
+		background-color: #212529;
+		border-radius: rem(5);
+		padding: rem(20);
+		min-width: rem(140);
+	}
+	// .sub-menu__item
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: rem(10);
+		}
+	}
+	// .sub-menu__link
+	&__link {
+		font-weight: 500;
+		line-height: 2.08; /* 25/12 */
+		color: rgba(248, 249, 250, 0.6);
+		transition: color 0.3s;
+		@media (any-hover: hover){
+			&:hover {
+				color: #F8F9FA;
+			}
+		}
+	}
+}
+.menu-icon {
+	display: none;
+	@media (max-width: em(660)){
+		display: block;
+		flex: 0 0 rem(30);
+		height: rem(18);
+		position: relative;
+		&::before, &::after, span{
+			content:'';
+			position: absolute;
+			left: 0;
+			height: 1px;
+			width: 100%;
+			background-color: #fff;
+		}
+		&::before{
+			top: 0;
+		}
+		&::after{
+			bottom: 0;
+		}
+		span {
+			top: 50%;
+			margin-top: rem(-0.5);
+		}
+	}
+}
+
+
+/* ------------------ */
+
+
+
+
+
