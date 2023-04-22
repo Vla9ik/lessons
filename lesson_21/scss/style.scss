@@ -139,6 +139,7 @@ body {
 			left: -100%;
 			background-color: #212529;
 			padding: rem(70) rem(15) rem(20) rem(15);
+			transition: left 0.3s;
 			&::before {
 				content: "";
 				position: fixed;
@@ -148,6 +149,7 @@ body {
 				left: -100%;
 				background-color: #86111188;
 				z-index: 1;
+				transition: left 0.3s;
 			}
 		}
 	}
@@ -292,6 +294,7 @@ body {
 			height: 1px;
 			width: 100%;
 			background-color: #fff;
+			transition: all 0.3s;
 		}
 		&::before{
 			top: 0;
@@ -303,6 +306,21 @@ body {
 			top: 50%;
 			margin-top: rem(-0.5);
 		}
+	}
+}
+
+@media (max-width: em(660)){
+	.menu-open .menu-icon::before {
+		top: 50%;
+		transform: translateY(-50%) rotate(-45deg);
+	}
+	.menu-open .menu-icon::after {
+		bottom: 50%;
+		transform: translateY(50%) rotate(45deg);
+	}
+	.menu-open .menu-icon span {
+		width: 0;
+		left: 50%;
 	}
 }
 
