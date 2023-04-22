@@ -110,6 +110,10 @@ body {
 		align-self: stretch;
 		flex: 0 0 rem(22);
 		transform: translate(rem(5), rem(0));
+		@media (max-width:em(660)){
+		transform: translate(rem(0), rem(0));
+		background-size: 100%;
+		}
 	}
 }
 .menu {
@@ -121,7 +125,7 @@ body {
 			top: 0;
 			left: 0;
 			background-color: #212529;
-			padding: rem(70), rem(15), rem(20), rem(15);
+			padding: rem(70) rem(15) rem(20) rem(15);
 		}
 	}
 	// .menu__list

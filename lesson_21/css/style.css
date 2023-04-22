@@ -198,6 +198,14 @@ body {
       -ms-transform: translate(0.3125rem, 0rem);
           transform: translate(0.3125rem, 0rem);
 }
+@media (max-width: 41.25em) {
+  .header__search {
+    -webkit-transform: translate(0rem, 0rem);
+        -ms-transform: translate(0rem, 0rem);
+            transform: translate(0rem, 0rem);
+    background-size: 100%;
+  }
+}
 
 @media (max-width: 41.25em) {
   .menu__body {
@@ -207,7 +215,7 @@ body {
     top: 0;
     left: 0;
     background-color: #212529;
-    padding: 4.375rem, 0.9375rem, 1.25rem, 0.9375rem;
+    padding: 4.375rem 0.9375rem 1.25rem 0.9375rem;
   }
 }
 .menu__list {
