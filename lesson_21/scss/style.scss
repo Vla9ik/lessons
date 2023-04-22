@@ -119,6 +119,15 @@ body {
 		}
 	}
 }
+
+
+@media (max-width: em(660)){
+	.menu-open .menu__body, 
+	.menu-open .menu__body::before{
+		left: 0;
+	}
+}
+
 .menu {
 	&__body {
 		@media (max-width: em(660)){
@@ -127,18 +136,17 @@ body {
 			width: 100%;
 			height: 100%;
 			top: 0;
-			left: 0;
+			left: -100%;
 			background-color: #212529;
 			padding: rem(70) rem(15) rem(20) rem(15);
-			z-index: -1;
 			&::before {
 				content: "";
+				position: fixed;
 				height: rem(50);
 				width: 100%;
-				position: fixed;
 				top: 0;
-				left: 0;
-				background-color: #b78d8d00;
+				left: -100%;
+				background-color: #86111188;
 				z-index: 1;
 			}
 		}
@@ -186,14 +194,16 @@ body {
 		}
 		// .menu__item_parent
 		&_parent {
-			&::after{
-				content:'';
-				position: absolute;
-				top: rem(10);
-				right: 0;
-				width: rem(8);
-				height: rem(5);
-				background: url('../img/icons/arrow.svg') 0 0 / 100% no-repeat;
+			@media (min-width:em(660)){
+				&::after{
+					content:'';
+					position: absolute;
+					top: rem(10);
+					right: 0;
+					width: rem(8);
+					height: rem(5);
+					background: url('../img/icons/arrow.svg') 0 0 / 100% no-repeat;
+				}
 			}
 		}
 	}
@@ -201,6 +211,7 @@ body {
 	&__link {
 		@media (max-width: em(660)){
 			font-size: rem(24);
+			color: #ffff;
 		}
 		font-weight: 500;
 		line-height: 2.08; /* 25/12 */
@@ -240,6 +251,10 @@ body {
 		border-radius: rem(5);
 		padding: rem(20);
 		min-width: rem(140);
+		@media (max-width: em(660)){
+			padding: rem(10) 0 0 0;
+			min-width: 0;
+		}
 	}
 	// .sub-menu__item
 	&__item {
@@ -257,6 +272,9 @@ body {
 			&:hover {
 				color: #F8F9FA;
 			}
+		}
+		@media (max-width: em(660)){
+			font-size: rem(16);
 		}
 	}
 }
