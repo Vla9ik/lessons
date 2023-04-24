@@ -406,6 +406,9 @@ body {
 			grid-template-columns: repeat(auto-fit, minmax(rem(393), 1fr));
 			column-gap: rem(30);
 			row-gap: rem(45);
+			@media (max-width: em(479.98)){
+				grid-template-columns: repeat(auto-fit, minmax(rem(320), 1fr));
+			}
 		}
 		// .articles-cards__item
 		&__item {}

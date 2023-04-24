@@ -536,6 +536,11 @@ body {
           column-gap: 1.875rem;
   row-gap: 2.8125rem;
 }
+@media (max-width: 29.99875em) {
+  .articles-cards__items {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+}
 .cards-header__categories {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
