@@ -97,7 +97,7 @@ body {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	object-position: center;
+	object-position: right;
 	transition: transform 0.5s;
 }
 
@@ -188,11 +188,6 @@ body {
 	background: #FAFAFA;
 }
 
-.latest-products__header {
-	max-width: 575px;
-	margin: 0 auto 70px;
-}
-
 .header-products__title {
 	font-weight: 700;
 	font-size: 40px;
@@ -214,9 +209,6 @@ body {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 30px;
-	grid-auto-flow: row;
-	grid-auto-rows: 1fr;
-	grid-auto-columns: 1fr;
 }
 
 
@@ -243,7 +235,10 @@ body {
 	transition: transform 0.5s;
 }
 
-
+.item-product__wrapper {
+	display: flex;
+	flex-direction: column;
+}
 
 .item-product__title {
 	display: block;
@@ -261,14 +256,13 @@ body {
 .item-product__text  {
 	padding: 0 25px;
 	margin-bottom: 25px;
+	flex-grow: 1;
 }
 .item-product__text p {
 	line-height: 1.50; /* 24/16 */
 }
 .item-product__reviews {
 	border-top: 1px solid #E7E7E7;
-}
-.reviews {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -463,30 +457,11 @@ body {
 	padding-top: 120px;
 }
 
-.trend__header {
-	margin: 0 auto;
-	max-width: 490px;
-	text-align: center;
-	margin-bottom: 70px;
-}
-
-.header-trend__title {
-	font-style: normal;
-	font-weight: 700;
-	font-size: 40px;
-	line-height: 1.13; /* 45/40 */
-	text-transform: capitalize;
-	margin-bottom: 15px;
-	color: #212B36;
-}
 
 .trend__cards {
 	overflow: hidden;
 	display: grid;
 	grid-template: repeat(2, 1fr) / repeat(3, 1fr);
-	grid-auto-flow: row;
-	grid-auto-rows: 1fr;
-	grid-auto-columns: 1fr;
 	border: 1px solid #E7E7E7;
 	border-radius: 10px;
 }
@@ -592,43 +567,10 @@ body {
 	padding-top: 120px;
 }
 
-.latests-collections__header, .featured-products__header, .top-collections__header  {
-	margin: 0 auto;
-	text-align: center;
-	max-width: 505px;
-	margin-bottom: 70px;
-}
-
-.header-collection__recent, .header-featured__new, .header-collection-top__sell  {
-	font-weight: 600;
-	font-size: 18px;
-	line-height: 1.33; /* 24/18 */
-	color: #3056D3;
-}
-.header-collection__recent:not(:last-child) {
-	margin-bottom: 10px;
-}
-
-.header-collection__title, .header-featured__title, .header-collection-top__title {
-	font-weight: 700;
-	font-size: 40px;
-	line-height: 1.13; /* 45/40 */
-	text-transform: capitalize;
-	color: #212B36;
-}
-.header-collection__title:not(:last-child), .header-featured__title:not(:last-child) {
-	margin-bottom: 15px;
-}
-.header-collection__text p, .header-featured__text p, .header-collection-top__text p {
-	line-height: 1.5;
-}
 .latests-collections__items {
 	display: grid;
 	gap: 30px;
 	grid-template: 1fr / repeat(auto-fit, minmax(270px, 1fr));
-	grid-auto-flow: row;
-	grid-auto-rows: 1fr;
-	grid-auto-columns: 1fr;
 }
 
 .latests-collections__image {
@@ -687,7 +629,7 @@ body {
 
 .featured-products__items {
 	display: grid;
-	grid-template: repeat(2, 1fr) / 470px auto 470px;
+	grid-template: repeat(2, 1fr) / 40.17094% auto 40.17094%;
 	gap: 30px;
 }
 
@@ -696,15 +638,9 @@ body {
 	border-radius: 8px;
 }
 
-
-
-.featured-products__item:nth-child(1) {
+/* .featured-products__item:nth-child(1),  */
+.featured-products__item:nth-child(4n + 1), .featured-products__item:nth-child(4n) {
 	grid-column: span 2;
-} 
-
-.featured-products__item:nth-child(4) {
-	grid-row: 2 / 3;
-	grid-column: 2 / span 2;
 } 
 
 
@@ -845,9 +781,8 @@ body {
 		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 		gap: 20px;
 	}
-	.featured-products__item:nth-child(1), .featured-products__item:nth-child(4) {
+	.featured-products__item:nth-child(4n + 1), .featured-products__item:nth-child(4n) {
 		grid-column: auto;
-		grid-row: auto;
 	}
 	.featured-products__wrapper_big {
 		padding-top: 74.57265%;
@@ -1194,3 +1129,27 @@ body {
 }
 
 /* ---------------------------- */
+
+
+.latest-products__header, .trend__header, .latests-collections__header, .featured-products__header, .top-collections__header {
+	margin-bottom: 70px;
+}
+
+@media (max-width: 991.98px){
+	.latest-products__header, .trend__header, .latests-collections__header, .featured-products__header, .top-collections__header {
+		margin-bottom: 50px;
+	}
+}
+
+@media (max-width: 767.98px){
+	.latest-products__header, .trend__header, .latests-collections__header, .featured-products__header, .top-collections__header {
+		margin-bottom: 45px;
+	}
+}
+
+@media (max-width: 479.98px){
+	.latest-products__header, .trend__header, .latests-collections__header, .featured-products__header, .top-collections__header {
+		margin-bottom: 35px;
+	}
+}
+
