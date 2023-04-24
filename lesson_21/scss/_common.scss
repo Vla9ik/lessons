@@ -1,6 +1,13 @@
 %title {
     font-size: rem(25);
-    line-height: 40;
+    line-height: 1.6;
+}
+
+
+%nav-style {
+    font-weight: 500;
+    line-height: 25;
+    color: rgba(248, 249, 250, 0.5);
 }
 
 @mixin title($textColor: #F8F9FA, $fontWeight: 700) {
@@ -9,9 +16,22 @@
     @extend %title;
 }
 
+.title {
+    @include title();
+}
 
-%nav-style {
-    font-weight: 500;
-    line-height: 25;
-    color: rgba(248, 249, 250, 0.5);
+%link-style {
+    display: inline-block;
+    padding: rem(3) rem(12);
+    font-size: rem(8);
+    line-height: 2.5;
+    color: #F8F9FA;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: rgba(33, 37, 41, 0.3);
+    border-radius: rem(3)
+}
+
+.link-category {
+    @extend %link-style;
 }
