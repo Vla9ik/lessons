@@ -1,19 +1,11 @@
-%title {
-    font-size: rem(25);
-    line-height: 1.6;
-}
 
 
-%nav-style {
-    font-weight: 500;
-    line-height: 25;
-    color: rgba(248, 249, 250, 0.5);
-}
 
-@mixin title($textColor: #F8F9FA, $fontWeight: 700) {
+@mixin title($textColor: #F8F9FA, $fontWeight: 700, $liheHeight: 1.6, $fontSize: rem(25)) {
     color: $textColor;
     font-weight: $fontWeight;
-    @extend %title;
+    line-height: $liheHeight;
+    font-size: $fontSize;
 }
 
 .title {

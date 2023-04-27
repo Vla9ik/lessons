@@ -407,7 +407,7 @@ body {
 			column-gap: rem(30);
 			row-gap: rem(45);
 			@media (max-width: em(479.98)){
-				grid-template-columns: repeat(auto-fit, minmax(rem(320), 1fr));
+				grid-template-columns: repeat(auto-fit, minmax(rem(290), 1fr));
 			}
 		}
 		// .articles-cards__item
@@ -497,6 +497,13 @@ body {
 		&__title {
 			&.title {
 				@include title($textColor: #212529);
+				a {
+					@media (any-hover: hover){
+						&:hover{
+							text-decoration: underline;
+						}
+					}
+				}
 			}
 		}
 		// .item-article__text
@@ -518,6 +525,85 @@ body {
 			}
 		}
 }
-.title {
+
+
+.page {
+	// .page__featured-topics
+	&__featured-topics {}
+}
+.featured-topics {
+	@media (min-width:em(767)){
+		display: flex;
+	}
+	// .featured-topics__content
+	&__content {
+		flex: 0 0 100%;
+		background-color: #6d5e5e;
+	}
+	// .featured-topics__container
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+	// .featured-topics__body
+	&__body {
+		@media (min-width:em(767)){
+			width: 50%;
+			padding: rem(100) rem(140) rem(100) rem(0);
+		}
+	}
+	// .featured-topics__image-content
+	&__image-content {
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		@media (min-width:em(767)){
+			flex: 0 0 50%;
+			transform: translate(-100%, 0);
+		}
+		position: relative;
+		// padding-top: 69.213%; /* 903/1270 */
+		padding-top:62.708333%; /* 903/1440 */
+	}
+}
+.body-featured {
+	// .body-featured__block
+	&__block {}
+	// .body-featured__title
+	&__title {}
+	// .body-featured__items
+	&__items {}
+	// .body-featured__item
+	&__item {}
+}
+.item-featured {
+	// .item-featured__image
+	&__image {}
+	// .item-featured__text
+	&__text {}
+	// .item-featured__date
+	&__date {}
+	// .item-featured__title
+	&__title {}
+	// .item-featured__about
+	&__about {}
+}
+.image-content {
+
+	// .image-content__text
+	&__text {
+		position: relative;
+		z-index: 2;
+		max-width: rem(400);
+	}
+	// .image-content__title
+	&__title {}
+	// .image-content__about
+	&__about {}
 }
 
