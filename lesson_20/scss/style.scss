@@ -679,9 +679,6 @@ body {
 	&__items {
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
-		grid-auto-rows: 1fr;
-		grid-auto-columns: 1fr;
-		grid-auto-flow: row;
 		gap: 30px;
 		@media (max-width: 1200px) {
 			gap: 20px;
@@ -880,6 +877,7 @@ body {
 	}
 	// .explore-product__title
 	&__title {
+		padding: 10px 10px 0 0;
 		font-weight: 500;
 		font-size: 56px;
 		line-height: 1.5; /* 72/56 */
