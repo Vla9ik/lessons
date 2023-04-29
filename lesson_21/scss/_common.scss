@@ -27,3 +27,13 @@
 .link-category {
     @extend %link-style;
 }
+
+%footer-style {
+    font-weight: 500;
+    font-size: rem(12);
+    line-height: 2.08;
+    color: rgba(248, 249, 250, 0.5);
+}
+
+
+// @extend %footer-style;
