@@ -831,12 +831,14 @@ body {
   }
 }
 
-.big-world__title {
+.big-world__title.title {
+  color: #495057;
+  font-weight: 500;
+  line-height: 1;
   font-size: 1.5625rem;
-  color: #212529;
 }
 @media (max-width: 61.99875em) {
-  .big-world__title {
+  .big-world__title.title {
     font-size: 1.25rem;
   }
 }

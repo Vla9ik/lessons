@@ -686,18 +686,15 @@ body {
 	&__container {}
 	// .big-world__title
 	&__title {
-		// &.title {
-		// 	@include title($textColor: #495057, $fontWeight: 500, $liheHeight: 1, $fontSize: rem(25));
-		// }
-		font-size: rem(25);
-		color: #212529;
-		@media (max-width:em(991.98)){
-			font-size: rem(20);
+		&.title {
+			@include title($textColor: #495057, $fontWeight: 500, $liheHeight: 1, $fontSize: rem(25));
+			@media (max-width:em(991.98)){
+				font-size: rem(20);
+			}
 		}
 		&:not(:last-child) {
 			margin-bottom: em(60, 25);
 		}
-		
 	}
 	// .big-world__items
 	&__items {
