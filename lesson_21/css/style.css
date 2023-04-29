@@ -841,7 +841,7 @@ body {
   }
 }
 .big-world__title:not(:last-child) {
-  margin-bottom: 3em;
+  margin-bottom: 2.4em;
 }
 .big-world__items {
   display: grid;
